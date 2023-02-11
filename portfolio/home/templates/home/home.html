@@ -16,13 +16,13 @@
 </head>
 <body>
     
-    <!--Sidebar-->
+    <!------------------Sidebar------------------->
     <div class="sidebar">
         <div class="sidebar-bar">
             <img src="{% static 'home/img/bar.png'%}" class="bars" alt="">
         </div>
         <div class="name-song">
-            <p class="text-song">Estas Oyendo animan studios</p>
+            <p class="text-song">Musica Desactivada</p>
         </div>
     </div>
     <div class="sidebar-movil">
@@ -30,6 +30,16 @@
     </div>
 
     <!--Complementos-->
+    <div class="complementos">
+        <div class="extensiones">
+            <i class="fa-solid fa-volume-xmark off"></i>
+        </div>
+    </div>
+
+    <!--Audio-->
+    <audio id="song">
+        <source src="{% static 'home/songs/lofi.mp3'%}" type="audio/mpeg">
+      </audio>
 
     <script src="{% static 'home/scripts/menu.js' %}"></script>
     <script src="{% static 'home/scripts/sidebar.js' %}"></script>

@@ -22,8 +22,8 @@
 .sidebar .name-song{
     position: absolute;
     overflow: hidden;
-    left: -75px;
-    bottom: 150px;
+    left: -35px;
+    bottom: 125px;
     color: white;
     transform: rotate(-90deg);
 }
@@ -64,4 +64,23 @@
     .sidebar-movil{
         display: block;
     }
+}
+
+
+/* -------------- MENU -------------- */
+
+.complementos{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.complementos .extensiones{
+    display: flex;
+}
+
+.complementos .extensiones i{
+    font-size: 25px;
+    color: yellow;
+    cursor: pointer;
 }
