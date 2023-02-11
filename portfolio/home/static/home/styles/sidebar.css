@@ -11,7 +11,7 @@
 .sidebar .sidebar-bar{
     text-align: center;
     padding: 30px;
-    background-color: rgb(70, 70, 70);   
+    background-color: rgb(70, 70, 70);  
 }
 
 .sidebar .sidebar-bar .bars{
@@ -26,12 +26,11 @@
     bottom: 150px;
     color: white;
     transform: rotate(-90deg);
-
 }
 
 .sidebar .name-song .text-song{
     white-space: nowrap;
-    animation: moving-text 5s linear infinite;
+    animation: moving-text 4s linear infinite;
 }
 
 

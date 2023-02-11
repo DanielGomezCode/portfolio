@@ -9,4 +9,8 @@
 
 body{
     background-color: rgb(35, 35, 35);
+    background-image: url(../img/black.jpg);
+    background-size: cover;
+    /*background-position: center;*/
+    opacity: 0.8;
 }
