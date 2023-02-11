@@ -1,0 +1,68 @@
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100vh;
+    background-color: #0B0B0B;
+    border-right: 1px solid white;
+}
+
+.sidebar .sidebar-bar{
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(70, 70, 70);   
+}
+
+.sidebar .sidebar-bar .bars{
+    width: 20px;
+    cursor: pointer;
+}
+
+.sidebar .name-song{
+    position: absolute;
+    overflow: hidden;
+    left: -75px;
+    bottom: 150px;
+    color: white;
+    transform: rotate(-90deg);
+
+}
+
+.sidebar .name-song .text-song{
+    white-space: nowrap;
+    animation: moving-text 5s linear infinite;
+}
+
+
+@keyframes moving-text {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+
+.sidebar-movil{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.sidebar-movil{
+    cursor: pointer;
+    width: 20px;
+}
+
+@media screen and (max-width: 500px){
+    .sidebar{
+        display: none;
+    }
+
+    .sidebar-movil{
+        display: block;
+    }
+}
