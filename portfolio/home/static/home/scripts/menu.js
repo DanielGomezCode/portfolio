@@ -1,6 +1,14 @@
+// Funcion para aparecer paleta de colores
+var paleta = document.getElementsByClassName('color-title-btn')[0]
+var paletaContainer = document.getElementsByClassName('title-colors')[0]
+
+paleta.addEventListener('click', function(){
+  paletaContainer.classList.toggle('active')
+})
+
+
+
 // Funcion para que la musica funcione
-
-
 
 var musicIcon = document.getElementsByClassName('off')[0]
 var musicStop = document.getElementsByClassName('pause')[0]
@@ -10,13 +18,84 @@ var textoMusic = document.getElementsByClassName('text-song')[0]
 musicIcon.addEventListener('click', function(){
    if(audio.paused) {
     audio.play();
-    musicIcon.className = 'fa-solid fa-volume-high'
+    musicIcon.className = 'fa-solid fa-volume-high point'
     textoMusic.textContent = 'Lo-fi Type Beat - Rain'
 
    } else {
      audio.currentTime = audio.duration;
-     musicIcon.className = "fa-solid fa-volume-xmark off"
+     musicIcon.className = "fa-solid fa-volume-xmark point off"
      textoMusic.textContent = 'Musica Desactivada'
    }
+})
+
+// Funcion para cambiar el color de los titulos
+
+var btnBlue = document.getElementsByClassName('blue')[0]
+var btnRed = document.getElementsByClassName('red')[0]
+var btnYellow = document.getElementsByClassName('yellow')[0]
+var btnGreen = document.getElementsByClassName('green')[0]
+var btnAqua = document.getElementsByClassName('aqua')[0]
+var btnOrange = document.getElementsByClassName('orange')[0]
+var titleColors = document.getElementsByClassName('change-color')
+
+btnBlue.addEventListener('click', function(){
+  for (let i = 0; i < titleColors.length; i++) {
+    titleColors[i].classList.add('blue')
+    titleColors[i].classList.remove('yellow')
+    titleColors[i].classList.remove('red')
+    titleColors[i].classList.remove('green')
+    titleColors[i].classList.remove('aqua')
+    titleColors[i].classList.remove('orange')
+  }
+})
+btnRed.addEventListener('click', function(){
+  for (let i = 0; i < titleColors.length; i++) {
+    titleColors[i].classList.add('red')
+    titleColors[i].classList.remove('blue')
+    titleColors[i].classList.remove('green')
+    titleColors[i].classList.remove('yellow')
+    titleColors[i].classList.remove('aqua')
+    titleColors[i].classList.remove('orange')
+  }
+})
+btnYellow.addEventListener('click', function(){
+  for (let i = 0; i < titleColors.length; i++) {
+    titleColors[i].classList.add('yellow')
+    titleColors[i].classList.remove('blue')
+    titleColors[i].classList.remove('green')
+    titleColors[i].classList.remove('red')
+    titleColors[i].classList.remove('aqua')
+    titleColors[i].classList.remove('orange')
+  }
+})
+btnGreen.addEventListener('click', function(){
+  for (let i = 0; i < titleColors.length; i++) {
+    titleColors[i].classList.add('green')
+    titleColors[i].classList.remove('blue')
+    titleColors[i].classList.remove('red')
+    titleColors[i].classList.remove('yellow')
+    titleColors[i].classList.remove('aqua')
+    titleColors[i].classList.remove('orange')
+  }
+})
+btnOrange.addEventListener('click', function(){
+  for (let i = 0; i < titleColors.length; i++) {
+    titleColors[i].classList.add('orange')
+    titleColors[i].classList.remove('blue')
+    titleColors[i].classList.remove('green')
+    titleColors[i].classList.remove('yellow')
+    titleColors[i].classList.remove('aqua')
+    titleColors[i].classList.remove('red')
+  }
+})
+btnAqua.addEventListener('click', function(){
+  for (let i = 0; i < titleColors.length; i++) {
+    titleColors[i].classList.add('aqua')
+    titleColors[i].classList.remove('blue')
+    titleColors[i].classList.remove('green')
+    titleColors[i].classList.remove('yellow')
+    titleColors[i].classList.remove('red')
+    titleColors[i].classList.remove('orange')
+  }
 })
 

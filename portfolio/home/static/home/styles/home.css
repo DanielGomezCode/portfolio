@@ -1,16 +1,197 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins';
+
+
+/* ------------- INICIO -------------- */
+
+/* Parte Superior */
+
+.inicio__cabecera{
+    padding: 30px 30px 30px 130px;
 }
 
-/* Home (General) */
-
-body{
-    background-color: rgb(35, 35, 35);
-    background-image: url(../img/black.jpg);
-    background-size: cover;
-    /*background-position: center;*/
-    opacity: 0.8;
+.inicio__etiqueta{
+    display: inline-block;
+    font-family: 'Amatic SC';
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--yellow);
+    color: var(--white);
 }
+
+
+.inicio__titulo{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.inicio__titulo span{
+    font-family: 'Akronim';
+    font-size: 75px;
+    font-weight: 400;
+    color: var(--yellow);
+}
+
+.inicio__escritura{
+    font-family: 'Share Tech Mono';
+    font-weight: 400;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.inicio__escritura span{
+    overflow: hidden;
+    position: absolute;
+    margin-left: 10px;
+    font-family: 'Share Tech Mono';
+    font-weight: 400;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: var(--yellow);
+}
+
+.inicio__escritura span::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(42, 42, 42);
+    border-left: 2px solid var(--yellow);
+    animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px)
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+/* Parte media */
+
+.inicio__descripcion__titulo{
+    padding-top: 25px;
+    font-family: 'Bahiana';
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--yellow);
+}
+
+.inicio__descripcion__texto{
+    padding-top: 8px;
+    width: 500px;
+    font-family: 'Amatic SC';
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.inicio__boton{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid var(--yellow);
+    font-family: 'Bahiana';
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--yellow);
+    transition: 0.5s ease;
+}
+
+.inicio__boton:hover{
+    background-color: var(--yellow);
+    color: black;
+    transition: 0.5s ease;
+}
+
+.inicio__boton i{
+    margin-left: 10px;
+}
+
+.inicio__redes{
+    position: absolute;
+    top: 20%;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inicio__redes i{
+    margin: 20px 0;
+    color: var(--yellow);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Parte Inferior */
+
+.inicio__numeros{
+    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    padding: 30px 30px 30px 30px;
+    background: rgba(217, 217, 217, 0.233);
+    backdrop-filter: blur(5px);
+}
+
+.inicio__numeros__caja{
+    display: flex;
+    margin: 0 20px;
+    align-items: center;
+}
+
+.inicio__numeros__caja__dato{
+    padding: 20px 26px;
+    border: 2px solid var(--yellow);
+    border-radius: 100px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.inicio__numeros__caja__dato.two{
+    padding: 20px 34px;
+}
+
+.inicio__numeros__caja__parrafo{
+    margin-left: 15px;
+}
+
+.inicio__numeros__titulo{
+    font-family: 'Bahiana';
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--yellow);
+}
+
+.inicio__numeros__texto{
+    font-family: 'Amatic SC';
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.inicio__tucan{
+    position: absolute;
+    width: 550px;
+    bottom: 150px;
+    right: 10%;
+}
+

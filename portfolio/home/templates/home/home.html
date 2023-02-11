@@ -6,9 +6,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Estilos Css-->
+    <link rel="stylesheet" href="{% static 'home/styles/index.css' %}">
     <link rel="stylesheet" href="{% static 'home/styles/sidebar.css' %}">
     <link rel="stylesheet" href="{% static 'home/styles/home.css' %}">
     <title>Portfolio | Dani-Dev</title>
+    <!--Fuentes y iconos-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akronim&family=Amatic+SC:wght@400;700&family=Bahiana&family=Barlow:wght@400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
@@ -29,18 +32,99 @@
         <img src="{% static 'home/img/bar.png'%}" class="bars" alt="">
     </div>
 
-    <!--Complementos-->
-    <div class="complementos">
-        <div class="extensiones">
-            <i class="fa-solid fa-volume-xmark off"></i>
-        </div>
-    </div>
-
     <!--Audio-->
     <audio id="song">
         <source src="{% static 'home/songs/lofi.mp3'%}" type="audio/mpeg">
       </audio>
 
+    <!----------------------HOME----------------------->
+
+    <section class="inicio">
+        <div class="inicio__cabecera">
+            <h5 class="inicio__etiqueta change-color">PORTAFOLIO</h5>
+            <h1 class="inicio__titulo">MI NOMBRE ES... <br> <span class="change-color">DANIEL GÓMEZ</span></h1>
+            <h3 class="inicio__escritura"> y soy <span class="inicio__escritura-profesion change-color">DESARROLLADOR WEB</span></h3>
+            <div class="inicio__descripcion">
+                <h4 class="inicio__descripcion__titulo change-color">"DESCUBRE MIS habilidades: ¡Explora MIS PROYECTOS!"</h4>
+                <p class="inicio__descripcion__texto">"¡Hola USUARIO! Me encantaría invitarte a echar un vistazo
+                a mis proyectos en mi portafolio web. Será un placer mostrarte mis habilidades y logros. ¡Espero verte allí!"</p>
+            </div>
+            <a href="" class="inicio__boton change-color">Ver Protectos <i class="fa-solid fa-arrow-pointer"></i></a>
+            <div class="inicio__redes">
+                <i class="fa-brands fa-linkedin change-color"></i>
+                <i class="fa-brands fa-github change-color"></i>
+                <i class="fa-brands fa-whatsapp change-color"></i>
+                <i class="fa-brands fa-instagram change-color"></i>
+            </div>
+        </div>
+        <div class="inicio__numeros">
+            <div class="inicio__numeros__caja">
+                <h4 class="inicio__numeros__caja__dato one change-color"></h4>
+                <div class="inicio__numeros__caja__parrafo ">
+                    <h4 class="inicio__numeros__titulo change-color">TECNOLOGIAS ACTUALES</h4>
+                    <p class="inicio__numeros__texto">Lenguajes, librerias, Frameworks, Gestion de contenido, etc</p>
+                </div>
+            </div>
+            <div class="inicio__numeros__caja">
+                <h4 class="inicio__numeros__caja__dato two change-color"></h4>
+                <div class="inicio__numeros__caja__parrafo">
+                    <h4 class="inicio__numeros__titulo change-color">AÑOS DE EXPERIENCIA</h4>
+                    <p class="inicio__numeros__texto">Trabajando y aprendiendo conocimientos web</p>
+                </div>
+            </div>
+            <div class="inicio__numeros__caja">
+                <h4 class="inicio__numeros__caja__dato three change-color"></h4>
+                <div class="inicio__numeros__caja__parrafo">
+                    <h4 class="inicio__numeros__titulo change-color">PROYECTOS HECHOS</h4>
+                    <p class="inicio__numeros__texto">desde creación de landing pages, tiendas y academias web.</p>
+                </div>
+            </div>
+        </div>
+        <!--Imagen tucan-->
+        <img src="{% static 'home/img/tucan.png'%}" class="inicio__tucan" alt="">
+    </section>
+
+        <!--Complementos-->
+        <div class="complementos">
+            <div class="extensiones">
+                <i class="fa-solid fa-volume-xmark point change-color off"></i>
+                <div class="color-title">
+                    <i class="fa-solid fa-palette color-title-btn point change-color"></i>
+                    <div class="title-colors change-color">
+                        <i class="fa-solid fa-circle yellow"></i>
+                        <i class="fa-solid fa-circle blue"></i>
+                        <i class="fa-solid fa-circle red"></i>
+                        <i class="fa-solid fa-circle green"></i>
+                        <i class="fa-solid fa-circle orange"></i>
+                        <i class="fa-solid fa-circle aqua"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!--Scripts-->
+      <script src="{% static 'home/scripts/inicio.js' %}"></script>
     <script src="{% static 'home/scripts/menu.js' %}"></script>
     <script src="{% static 'home/scripts/sidebar.js' %}"></script>
 </body>

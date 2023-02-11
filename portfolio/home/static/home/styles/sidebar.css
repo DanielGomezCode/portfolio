@@ -71,16 +71,154 @@
 
 .complementos{
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 30px;
+    right: 150px;
 }
 
 .complementos .extensiones{
     display: flex;
 }
 
-.complementos .extensiones i{
+.complementos .extensiones .point{
+    margin: 0 15px;
     font-size: 25px;
-    color: yellow;
+    color: var(--yellow);
     cursor: pointer;
 }
+
+/* ------- Colores Extras ---------- */
+
+.yellow{
+    color: var(--yellow);
+}
+
+.blue{
+    color: var(--blue);
+}
+
+.red{
+    color: var(--red);
+}
+
+.orange{
+    color: var(--orange);
+}
+
+.aqua{
+    color: var(--aqua);
+}
+
+.green{
+    color: var(--green);
+}
+
+.change-color.blue{
+    color: var(--blue);
+    border-color: var(--blue);
+}
+
+.change-color.red{
+    color: var(--red);
+    border-color: var(--red);
+}
+
+.change-color.yellow{
+    color: var(--yellow);
+    border-color: var(--yellow);
+}
+
+.change-color.orange{
+    color: var(--orange);
+    border-color: var(--orange);
+}
+
+.change-color.aqua{
+    color: var(--aqua);
+    border-color: var(--aqua);
+}
+
+.change-color.green{
+    color: var(--green);
+    border-color: var(--green);
+}
+
+/* Azul */
+.color-title .point.change-color.blue{
+    color: var(--blue);
+}
+
+.extensiones .point.change-color.blue{
+    color: var(--blue);
+}
+
+/* Rojo */
+.color-title .point.change-color.red{
+    color: var(--red);
+}
+
+.extensiones .point.change-color.red{
+    color: var(--red);
+}
+
+/* Naranja */
+.color-title .point.change-color.orange{
+    color: var(--orange);
+}
+
+.extensiones .point.change-color.orange{
+    color: var(--orange);
+}
+
+/* Amarillo */
+.color-title .point.change-color.yellow{
+    color: var(--yellow);
+}
+
+.extensiones .point.change-color.yellow{
+    color: var(--yellow);
+}
+
+/* Verde */
+.color-title .point.change-color.green{
+    color: var(--green);
+}
+
+.extensiones .point.change-color.green{
+    color: var(--green);
+}
+
+/* Aqua */
+.color-title .point.change-color.aqua{
+    color: var(--aqua);
+}
+
+.extensiones .point.change-color.aqua{
+    color: var(--aqua);
+}
+
+/* ----------- TITULO DE COLOR ----------- */
+.color-title{
+    position: relative;
+}
+
+.title-colors{
+    position: absolute;
+    top: 50px;
+    right: -75px;
+    display: none;
+    border-radius: 10px;
+    background-color: #0B0B0B;
+    border: 2px solid var(--yellow);
+    padding: 10px;
+}
+
+.title-colors.active{
+    display: flex;
+}
+
+.title-colors i{
+    font-size: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+

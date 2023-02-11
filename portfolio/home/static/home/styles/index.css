@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+    transition: 0.5s ease;
+}
+
+/* Home (General) */
+
+body{
+    background-color: rgb(35, 35, 35);
+    background-image: url(../img/black.jpg);
+    background-size: cover;
+    opacity: 0.8;
+}
+
+/* Colores */
+
+:root{
+    --yellow: #FFE600;
+    --blue: #00A3FF;
+    --red: #FF0000;
+    --green: #05FF00;
+    --orange: #FF6B00;
+    --aqua: #00FFF0;
+    --white: #FFF;
+}
