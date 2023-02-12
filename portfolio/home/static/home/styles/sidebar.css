@@ -6,6 +6,7 @@
     height: 100vh;
     background-color: #0B0B0B;
     border-right: 1px solid white;
+    overflow: auto;
 }
 
 .sidebar .sidebar-bar{
@@ -197,9 +198,7 @@
 }
 
 /* ----------- TITULO DE COLOR ----------- */
-.color-title{
-    position: relative;
-}
+
 
 .title-colors{
     position: absolute;
@@ -222,3 +221,11 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 730px){
+    .sidebar{
+        height: 120vh;
+    }
+    .sidebar .name-song{
+        bottom: 205px;
+    }
+}
