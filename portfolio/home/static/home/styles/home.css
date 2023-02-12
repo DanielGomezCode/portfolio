@@ -5,6 +5,9 @@
 /* Parte Superior */
 
 .inicio{
+    background-color: rgb(13, 13, 13);
+    background-image: url(../img/black.jpg);
+    background-size: cover;
     display: flex;
     justify-content: space-between;
 }
