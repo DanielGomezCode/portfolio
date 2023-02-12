@@ -5,13 +5,13 @@ var text = document.querySelector('.inicio__escritura-profesion')
 
 var textLoad = () => {
     setTimeout(() => {
-        text.textContent = "Desarrollador";
+        text.textContent = "Developer";
     }, 0)
     setTimeout(() => {
         text.textContent = "Freelancer";
     }, 4300)
     setTimeout(() => {
-        text.textContent = "Full-stack";
+        text.textContent = "FullStack";
     }, 8300)
 }
 

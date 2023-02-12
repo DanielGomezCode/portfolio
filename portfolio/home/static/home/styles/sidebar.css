@@ -87,6 +87,15 @@
     cursor: pointer;
 }
 
+/* ----------- LENGUAJE ------------- */
+.languaje-btn{
+    font-size: 20px;
+    font-family: 'Bahiana';
+    padding: 5px 10px;
+    border: 1px solid var(--yellow);
+    border-radius: 10px;
+}
+
 /* ------- Colores Extras ---------- */
 
 .yellow{
@@ -203,7 +212,7 @@
 .title-colors{
     position: absolute;
     top: 50px;
-    right: -75px;
+    right: 75px;
     display: none;
     border-radius: 10px;
     background-color: #0B0B0B;

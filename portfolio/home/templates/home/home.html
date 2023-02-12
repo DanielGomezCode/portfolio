@@ -21,6 +21,8 @@
 <body class="body">
 
     <!-- Loader Inicio -->
+
+    <!--
     <div id="loader-wrapper">
         <div id="loader"></div>
         
@@ -28,6 +30,7 @@
         <div class="loader-section section-right"></div>
         
       </div>
+      -->
     
     <!------------------Sidebar------------------->
     <div class="sidebar">
@@ -35,7 +38,7 @@
             <img src="{% static 'home/img/bar.png'%}" class="bars" alt="">
         </div>
         <div class="name-song">
-            <p class="text-song">Musica Desactivada</p>
+            <p class="text-song">Song Off - Please On</p>
         </div>
     </div>
     <div class="sidebar-movil">
@@ -52,8 +55,12 @@
     <section class="inicio">
         <div class="inicio__cabecera">
             <h5 class="inicio__etiqueta change-color">PORTAFOLIO</h5>
-            <h1 class="inicio__titulo">MI NOMBRE ES... <br> <span class="change-color">DANIEL GÓMEZ</span></h1>
-            <h3 class="inicio__escritura"> y soy <span class="inicio__escritura-profesion change-color">DESARROLLADOR WEB</span></h3>
+            <h2 class="inicio__titulo">MI NOMBRE ES...</h2><br>
+            <h1><span class="change-color name__inicio">DANIEL GÓMEZ</span></h1>
+            <div class="y-soy">
+                <h3 class="inicio__escritura"> y soy</h3>
+                <h3><span class="inicio__escritura-profesion change-color">DESARROLLADOR WEB</span></h3>
+            </div>
             <div class="inicio__descripcion">
                 <h4 class="inicio__descripcion__titulo change-color">"DESCUBRE MIS habilidades: ¡Explora MIS PROYECTOS!"</h4>
                 <p class="inicio__descripcion__texto">"¡Hola USUARIO! Me encantaría invitarte a echar un vistazo
@@ -71,22 +78,22 @@
             <div class="inicio__numeros__caja">
                 <h4 class="inicio__numeros__caja__dato one change-color"></h4>
                 <div class="inicio__numeros__caja__parrafo ">
-                    <h4 class="inicio__numeros__titulo change-color">TECNOLOGIAS ACTUALES</h4>
-                    <p class="inicio__numeros__texto">Lenguajes, librerias, Frameworks, Gestion de contenido, etc</p>
+                    <h4 class="inicio__numeros__titulo inicio__titulo__uno change-color">TECNOLOGIAS ACTUALES</h4>
+                    <p class="inicio__numeros__texto inicio__parrafo__uno">Lenguajes, librerias, Frameworks, Gestion de contenido, etc</p>
                 </div>
             </div>
             <div class="inicio__numeros__caja">
                 <h4 class="inicio__numeros__caja__dato two change-color"></h4>
                 <div class="inicio__numeros__caja__parrafo">
-                    <h4 class="inicio__numeros__titulo change-color">AÑOS DE EXPERIENCIA</h4>
-                    <p class="inicio__numeros__texto">Trabajando y aprendiendo conocimientos web</p>
+                    <h4 class="inicio__numeros__titulo inicio__titulo__dos change-color">AÑOS DE EXPERIENCIA</h4>
+                    <p class="inicio__numeros__texto inicio__parrafo__dos">Trabajando y aprendiendo conocimientos web</p>
                 </div>
             </div>
             <div class="inicio__numeros__caja">
                 <h4 class="inicio__numeros__caja__dato three change-color"></h4>
                 <div class="inicio__numeros__caja__parrafo">
-                    <h4 class="inicio__numeros__titulo change-color">PROYECTOS HECHOS</h4>
-                    <p class="inicio__numeros__texto">desde creación de landing pages, tiendas y academias web.</p>
+                    <h4 class="inicio__numeros__titulo inicio__titulo__tres change-color">PROYECTOS HECHOS</h4>
+                    <p class="inicio__numeros__texto inicio__parrafo__tres">desde creación de landing pages, tiendas y academias web.</p>
                 </div>
             </div>
         </div>
@@ -108,6 +115,9 @@
                         <i class="fa-solid fa-circle orange"></i>
                         <i class="fa-solid fa-circle aqua"></i>
                     </div>
+                </div>
+                <div class="languaje">
+                    <a class="languaje-btn point change-color">IDIOMA: ESP</a>
                 </div>
             </div>
         </div>
@@ -136,6 +146,7 @@
       <!--Scripts-->
     <script src="{% static 'home/scripts/jquery.min.js' %}"></script>
     <script src="{% static 'home/scripts/inicio.js' %}"></script>
+    <script src="{% static 'home/scripts/idiomas.js' %}"></script>
     <script src="{% static 'home/scripts/menu.js' %}"></script>
     <script src="{% static 'home/scripts/sidebar.js' %}"></script>
 </body>

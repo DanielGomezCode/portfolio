@@ -36,10 +36,11 @@
     color: var(--white);
 }
 
-.inicio__titulo span{
+.name__inicio{
     font-family: 'Akronim';
     font-size: 125px;
     font-weight: 400;
+    line-height: 40px;
     color: var(--yellow);
 }
 
@@ -51,10 +52,18 @@
     color: var(--white);
 }
 
-.inicio__escritura span{
+.y-soy{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.inicio__escritura-profesion{
     overflow: hidden;
     position: absolute;
     margin-left: 10px;
+    top: 0;
     font-family: 'Share Tech Mono';
     font-weight: 400;
     font-size: 36px;
@@ -62,7 +71,7 @@
     color: var(--yellow);
 }
 
-.inicio__escritura span::before{
+.inicio__escritura-profesion::before{
     content: "";
     position: absolute;
     top: 0;
@@ -223,16 +232,17 @@
     }
     .inicio__titulo{
         font-size: 55px;
-        line-height: 65px;
+        line-height: 55px;
     }
-    .inicio__titulo span{
+    .name__inicio{
         font-size: 80px;
+        line-height: 30px;
     }
     .inicio__escritura{
         font-size: 22px;
     }
 
-    .inicio__escritura span{
+    .inicio__escritura-profesion{
         font-size: 22px;
     }
     .inicio__redes{
@@ -279,10 +289,10 @@
     }
     .inicio__titulo{
         font-size: 45px;
-        line-height: 55px;
     }
-    .inicio__titulo span{
+    .name__inicio{
         font-size: 60px;
+        line-height: 0;
     }
     .inicio__redes{
         right: 30%;
@@ -360,14 +370,20 @@
         font-size: 40px;
         line-height: 50px;
     }
-    .inicio__titulo span{
+    .name__inicio{
         font-size: 60px;
     }
-    .inicio__escritura{
-        font-size: 22px;
+    .y-soy{
+        justify-content: center;
+        margin-right: 150px;
     }
 
-    .inicio__escritura span{
+    .inicio__escritura{
+        font-size: 22px;
+        margin-right: 0;
+    }
+
+    .inicio__escritura-profesion{
         font-size: 22px;
     }
 
@@ -376,9 +392,6 @@
     }
     .inicio__numeros{
         display: none;
-    }
-    .inicio__escritura{
-        margin-right: 170px;
     }
     .inicio__descripcion__texto{
         width: 100%;
@@ -393,20 +406,24 @@
         margin-bottom: 20px;
     }
     .inicio__cabecera{
-        padding: 30px;
+        padding: 80px 30px 30px;
     }
     .inicio__titulo{
         font-size: 30px;
-        line-height: 40px;
+        line-height: 20px;
     }
-    .inicio__titulo span{
+    .name__inicio{
         font-size: 50px;
+    }
+    .y-soy{
+        justify-content: center;
+        margin-right: 150px;
     }
     .inicio__escritura{
         font-size: 22px;
     }
 
-    .inicio__escritura span{
+    .inicio__escritura-profesion{
         font-size: 22px;
     }
     .inicio__boton{

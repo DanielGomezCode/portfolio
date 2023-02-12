@@ -24,7 +24,7 @@ musicIcon.addEventListener('click', function(){
    } else {
      audio.currentTime = audio.duration;
      musicIcon.className = "fa-solid fa-volume-xmark point change-color off"
-     textoMusic.textContent = 'Musica Desactivada'
+     textoMusic.textContent = 'Song Off - Please On'
    }
 })
 
