@@ -18,12 +18,12 @@ var textoMusic = document.getElementsByClassName('text-song')[0]
 musicIcon.addEventListener('click', function(){
    if(audio.paused) {
     audio.play();
-    musicIcon.className = 'fa-solid fa-volume-high point'
+    musicIcon.className = 'fa-solid fa-volume-high point change-color'
     textoMusic.textContent = 'Lo-fi Type Beat - Rain'
 
    } else {
      audio.currentTime = audio.duration;
-     musicIcon.className = "fa-solid fa-volume-xmark point off"
+     musicIcon.className = "fa-solid fa-volume-xmark point change-color off"
      textoMusic.textContent = 'Musica Desactivada'
    }
 })

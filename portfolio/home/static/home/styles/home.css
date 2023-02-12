@@ -4,6 +4,11 @@
 
 /* Parte Superior */
 
+.inicio{
+    display: flex;
+    justify-content: space-between;
+}
+
 .inicio__cabecera{
     padding: 30px 30px 30px 130px;
 }
@@ -22,15 +27,15 @@
 .inicio__titulo{
     font-family: 'Poppins';
     font-weight: 700;
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 80px;
+    line-height: 95px;
     text-transform: uppercase;
     color: var(--white);
 }
 
 .inicio__titulo span{
     font-family: 'Akronim';
-    font-size: 75px;
+    font-size: 125px;
     font-weight: 400;
     color: var(--yellow);
 }
@@ -38,7 +43,7 @@
 .inicio__escritura{
     font-family: 'Share Tech Mono';
     font-weight: 400;
-    font-size: 26px;
+    font-size: 36px;
     text-transform: uppercase;
     color: var(--white);
 }
@@ -49,7 +54,7 @@
     margin-left: 10px;
     font-family: 'Share Tech Mono';
     font-weight: 400;
-    font-size: 26px;
+    font-size: 36px;
     text-transform: uppercase;
     color: var(--yellow);
 }
@@ -62,7 +67,7 @@
     height: 100%;
     width: 100%;
     background-color: rgb(42, 42, 42);
-    border-left: 2px solid var(--yellow);
+    border-left: 2px solid white;
     animation: animate 4s steps(12) infinite;
 }
 
@@ -78,7 +83,7 @@
 /* Parte media */
 
 .inicio__descripcion__titulo{
-    padding-top: 25px;
+    padding-top: 35px;
     font-family: 'Bahiana';
     font-weight: 400;
     font-size: 30px;
@@ -98,21 +103,20 @@
 
 .inicio__boton{
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 40px;
     padding: 10px 30px;
     border-radius: 10px;
     border: 1px solid var(--yellow);
     font-family: 'Bahiana';
-    font-size: 18px;
+    font-size: 28px;
     text-decoration: none;
     color: var(--yellow);
     transition: 0.5s ease;
 }
 
 .inicio__boton:hover{
-    background-color: var(--yellow);
+    background-color: var(--white);
     color: black;
-    transition: 0.5s ease;
 }
 
 .inicio__boton i{
@@ -121,8 +125,8 @@
 
 .inicio__redes{
     position: absolute;
-    top: 20%;
-    right: 30px;
+    top: 30%;
+    right: 20%;
     display: flex;
     flex-direction: column;
 }
@@ -137,25 +141,25 @@
 /* Parte Inferior */
 
 .inicio__numeros{
-    margin-top: 20px;
-    position: relative;
-    bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 100px;
-    padding: 30px 30px 30px 30px;
-    background: rgba(217, 217, 217, 0.233);
+    padding: 30px 0;
+    background: rgba(217, 217, 217, 0.08);
     backdrop-filter: blur(5px);
+    height: 100vh;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .inicio__numeros__caja{
-    display: flex;
-    margin: 0 20px;
-    align-items: center;
+    text-align: center;
+    margin: 10px 0;
 }
 
 .inicio__numeros__caja__dato{
+    margin-bottom: 10px;
+    display: inline-block;
     padding: 20px 26px;
     border: 2px solid var(--yellow);
     border-radius: 100px;
@@ -168,6 +172,11 @@
 .inicio__numeros__caja__dato.two{
     padding: 20px 34px;
 }
+
+.inicio__numeros__caja__dato.three{
+    padding: 20px 30px;
+}
+
 
 .inicio__numeros__caja__parrafo{
     margin-left: 15px;
@@ -191,7 +200,16 @@
 .inicio__tucan{
     position: absolute;
     width: 550px;
-    bottom: 150px;
-    right: 10%;
+    bottom: 0;
+    right: 25%;
 }
 
+
+/* ------------- MEDIA QUIERE -------------- */
+
+
+/* Ajustes al escritorio */
+
+@media screen and (max-width: 1300px){
+
+}
