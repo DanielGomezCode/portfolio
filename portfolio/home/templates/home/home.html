@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{% static 'home/styles/index.css' %}">
     <link rel="stylesheet" href="{% static 'home/styles/sidebar.css' %}">
     <link rel="stylesheet" href="{% static 'home/styles/home.css' %}">
+    <link rel="stylesheet" href="{% static 'home/styles/navbar.css' %}">
     <title>Portfolio | Dani-Dev</title>
     <!--Fuentes y iconos-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +31,7 @@
         <div class="loader-section section-right"></div>
         
       </div>
-      -->
+    -->
     
     <!------------------Sidebar------------------->
     <div class="sidebar">
@@ -41,14 +42,36 @@
             <p class="text-song">Song Off - Please On</p>
         </div>
     </div>
-    <div class="sidebar-movil">
-        <img src="{% static 'home/img/bar.png'%}" class="bars" alt="">
-    </div>
 
     <!--Audio-->
     <audio id="song">
         <source src="{% static 'home/songs/lofi.mp3'%}" type="audio/mpeg">
       </audio>
+
+        <!---------------------- MENU ----------------------->
+        <nav class="navbar">
+            <div class="navbar__cabecera">
+                <div class="navbar__cabecera__contenido">
+                    <h5 class="navbar__cabecera__contenido__etiqueta">MENU</h5>
+                    <h2 class="navbar__cabecera__contenido__nombre change-color">DANIEL GÓMEZ</h2>
+                    <h3 class="navbar__cabecera__contenido__subtitulo">Explora LA INNOVACIÓN Y creatividad atravez de un solo clic</h3>
+                </div>
+                <div class="navbar__cabecera__complementos">
+
+                </div>
+            </div>
+            <div class="navbar__links">
+                <a href="" class="navbar__link__inicio change-color">INICIO</a>
+                <a href="" class="navbar__link__acerca change-color">¿QUIEN SOY?</a>
+                <a href="" class="navbar__link__servicios change-color">SERVICIOS</a>
+                <a href="" class="navbar__link__portafolio change-color">PORTAFOLIO</a>
+                <a href="" class="navbar__link__contacto change-color">CONTACTAME</a>
+            </div>
+            <div class="navbar__copyright">
+                <a href="" class="navbar__cv change-color">DESCARGAR CV <i class="fa-solid fa-arrow-pointer"></i></a>
+                <p class="navbar__license change-color">@2023 Copyright | Todos los derechos reservados</p>
+            </div>
+        </nav>
 
     <!----------------------HOME----------------------->
 
@@ -121,6 +144,10 @@
                 </div>
             </div>
         </div>
+        <div class="sidebar-movil">
+            <img src="{% static 'home/img/bar.png'%}" class="bars-movil" alt="">
+        </div>
+
 
 
 

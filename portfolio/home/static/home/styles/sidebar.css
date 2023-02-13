@@ -87,6 +87,10 @@
     cursor: pointer;
 }
 
+.complementos.active{
+    right: 20px;
+}
+
 /* ----------- LENGUAJE ------------- */
 .languaje-btn{
     font-size: 20px;

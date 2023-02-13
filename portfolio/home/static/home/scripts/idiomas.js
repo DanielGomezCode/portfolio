@@ -1,7 +1,6 @@
 // -------- Variables Home -------- //
 
 var EtiquetaInicio = document.getElementsByClassName('inicio__etiqueta')[0]
-
 var TituloInicio = document.getElementsByClassName('inicio__titulo')[0]
 var ProfesionInicio = document.getElementsByClassName('inicio__escritura')[0]
 var TextoTituloInicio = document.getElementsByClassName('inicio__descripcion__titulo')[0]
@@ -14,7 +13,15 @@ var InicioInferiorParrafoUno = document.getElementsByClassName('inicio__parrafo_
 var InicioInferiorParrafoDos = document.getElementsByClassName('inicio__parrafo__dos')[0]
 var InicioInferiorParrafoTres = document.getElementsByClassName('inicio__parrafo__tres')[0]
 
-
+// --------- Variables Menu ---------- //
+var subtituloMenu = document.getElementsByClassName('navbar__cabecera__contenido__subtitulo')[0]
+var navLinkHome = document.getElementsByClassName('navbar__link__inicio')[0]
+var navLinkAbout = document.getElementsByClassName('navbar__link__acerca')[0]
+var navLinkservicios = document.getElementsByClassName('navbar__link__servicios')[0]
+var navLinkPortfolio = document.getElementsByClassName('navbar__link__portafolio')[0]
+var navLinkContacto = document.getElementsByClassName('navbar__link__contacto')[0]
+var linkCvNav = document.getElementsByClassName('navbar__cv')[0]
+var navCopyright = document.getElementsByClassName('navbar__license')[0]
 
 // Efecto cambio de boton
 
@@ -40,7 +47,16 @@ idiomaBtn.addEventListener('click', function(){
         InicioInferiorParrafoUno.textContent = 'LANGUAGES, LIBRARIES, FRAMEWORKS, CONTENT MANAGEMENT, ETC'
         InicioInferiorParrafoDos.textContent = 'WORKING AND LEARNING WEB KNOWLEDGE'
         InicioInferiorParrafoTres.textContent = 'SINCE THE CREATION OF LANDING PAGES, STORES AND WEB ACADEMIES.'
-
+        
+        // ------- Memu --------- //
+        subtituloMenu.textContent = 'EXPLORE INNOVATION AND CREATIVITY THROUGH ONE CLICK'
+        navLinkHome.textContent = 'HOME'
+        navLinkAbout.textContent = '¿ABOUT ME?'
+        navLinkservicios.textContent = 'SERVICES'
+        navLinkPortfolio.textContent = 'PORTFOLIO'
+        navLinkContacto.textContent = 'CONTACT ME'
+        linkCvNav.textContent = 'DOWNLOAD CV'
+        navCopyright.textContent = '@2023 Copyright | All rights reserved'
 
 
     }else if(!cambio){
@@ -58,5 +74,15 @@ idiomaBtn.addEventListener('click', function(){
         InicioInferiorParrafoUno.textContent = 'LENGUAJES, LIBRERIAS, FRAMEWORKS, GESTION DE CONTENIDO, ETC'
         InicioInferiorParrafoDos.textContent = 'TRABAJANDO Y APRENDIENDO CONOCIMIENTOS WEB'
         InicioInferiorParrafoTres.textContent = 'DESDE CREACIÓN DE LANDING PAGES, TIENDAS Y ACADEMIAS WEB.'
+
+        // ------- Memu --------- //
+        subtituloMenu.textContent = 'EXPLORA LA INNOVACIÓN Y CREATIVIDAD A TRAVÉS DE UN SOLO CLIC'
+        navLinkHome.textContent = 'INICIO'
+        navLinkAbout.textContent = '¿QUIEN SOY?'
+        navLinkservicios.textContent = 'SERVICIOS'
+        navLinkPortfolio.textContent = 'PORTAFOLIO'
+        navLinkContacto.textContent = 'CONTACTAME'
+        linkCvNav.textContent = 'DESCARGAR CV'
+        navCopyright.textContent = '@2023 Copyright | TODOS LOS DERECHOS RESERVADOS'
     }
 })

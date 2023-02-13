@@ -7,6 +7,25 @@ paleta.addEventListener('click', function(){
 })
 
 
+// Aparecer navbar 
+var varBtn = document.getElementsByClassName('bars')[0]
+var varbtnmovil = document.getElementsByClassName('bars-movil')[0]
+var menu = document.getElementsByClassName('navbar')[0]
+var inicioBar = document.getElementsByClassName('inicio')[0]
+var complementosNav = document.getElementsByClassName('complementos')[0]
+
+varBtn.addEventListener('click', function(){
+  menu.classList.toggle('active')
+  inicioBar.classList.toggle('active')
+  complementosNav.classList.toggle('active')
+})
+
+varbtnmovil.addEventListener('click', function(){
+  menu.classList.toggle('active')
+  inicioBar.classList.toggle('active')
+  complementosNav.classList.toggle('active')
+})
+
 
 // Funcion para que la musica funcione
 

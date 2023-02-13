@@ -4,12 +4,21 @@
 
 /* Parte Superior */
 
+body{
+    background-color: rgb(13, 13, 13);
+}
+
 .inicio{
     background-color: rgb(13, 13, 13);
     background-image: url(../img/black.jpg);
     background-size: cover;
     display: flex;
     justify-content: space-between;
+}
+
+.inicio.active{
+    position: absolute;
+    left: -300%;
 }
 
 .inicio__cabecera{
