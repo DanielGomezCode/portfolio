@@ -15,9 +15,14 @@ var inicioBar = document.getElementsByClassName('inicio')[0]
 var complementosNav = document.getElementsByClassName('complementos')[0]
 
 varBtn.addEventListener('click', function(){
-  menu.classList.toggle('active')
-  inicioBar.classList.toggle('active')
-  complementosNav.classList.toggle('active')
+  menu.classList.add('active')
+  aboutContainer.classList.remove('active')
+  inicioBar.classList.add('active')
+  complementosNav.classList.add('active')
+})
+
+varBtn.addEventListener('dblclick', function(){
+  alert('Debes seleccionar una seccion para poder continuar :)')
 })
 
 varbtnmovil.addEventListener('click', function(){

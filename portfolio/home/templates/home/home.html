@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{% static 'home/styles/index.css' %}">
     <link rel="stylesheet" href="{% static 'home/styles/sidebar.css' %}">
     <link rel="stylesheet" href="{% static 'home/styles/home.css' %}">
+    <link rel="stylesheet" href="{% static 'home/styles/about.css' %}">
     <link rel="stylesheet" href="{% static 'home/styles/navbar.css' %}">
     <title>Portfolio | Dani-Dev</title>
     <!--Fuentes y iconos-->
@@ -43,6 +44,7 @@
         </div>
     </div>
 
+
     <!--Audio-->
     <audio id="song">
         <source src="{% static 'home/songs/lofi.mp3'%}" type="audio/mpeg">
@@ -73,7 +75,12 @@
             </div>
         </nav>
 
-    <!----------------------HOME----------------------->
+            <!---------------------- ABOUT ----------------------->
+            <article class="about">
+                <i class="fa-solid fa-xmark close-about change-color"></i>
+            </article>
+
+        <!----------------------HOME----------------------->
 
     <section class="inicio">
         <div class="inicio__cabecera">
@@ -124,6 +131,7 @@
         <img src="{% static 'home/img/tucan.png'%}" class="inicio__tucan" alt="">
     </section>
 
+
         <!--Complementos-->
         <div class="complementos">
             <div class="extensiones">
@@ -173,6 +181,7 @@
       <!--Scripts-->
     <script src="{% static 'home/scripts/jquery.min.js' %}"></script>
     <script src="{% static 'home/scripts/inicio.js' %}"></script>
+    <script src="{% static 'home/scripts/about.js' %}"></script>
     <script src="{% static 'home/scripts/idiomas.js' %}"></script>
     <script src="{% static 'home/scripts/menu.js' %}"></script>
     <script src="{% static 'home/scripts/sidebar.js' %}"></script>

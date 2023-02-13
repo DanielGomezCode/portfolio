@@ -57,3 +57,14 @@ $(document).ready(function () {
     }, 1500);
   });
   
+
+//Aparecer inicio
+
+var InicioContainer = document.getElementsByClassName('inicio')[0]
+var btnInicioLink = document.getElementsByClassName('navbar__link__inicio')[0]
+
+btnInicioLink.addEventListener('click', function(e){
+    InicioContainer.classList.remove('active')
+    menu.classList.remove('active')
+    e.preventDefault()
+})

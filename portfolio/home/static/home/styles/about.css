@@ -1,0 +1,25 @@
+.about{
+    width: calc(100% - 100px);
+    height: 100vh;
+    margin-left: 100px;
+    background-color: black;
+    position: fixed;
+    right: -100%;
+}
+
+.about.active{
+    right: 0;
+}
+
+.about .close-about{
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: var(--white);
+    border: 2px solid var(--white);
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
