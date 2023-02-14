@@ -26,9 +26,10 @@ varBtn.addEventListener('dblclick', function(){
 })
 
 varbtnmovil.addEventListener('click', function(){
-  menu.classList.toggle('active')
-  inicioBar.classList.toggle('active')
-  complementosNav.classList.toggle('active')
+  menu.classList.add('active')
+  aboutContainer.classList.remove('active')
+  inicioBar.classList.add('active')
+  complementosNav.classList.add('active')
 })
 
 

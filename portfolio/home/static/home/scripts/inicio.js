@@ -66,5 +66,6 @@ var btnInicioLink = document.getElementsByClassName('navbar__link__inicio')[0]
 btnInicioLink.addEventListener('click', function(e){
     InicioContainer.classList.remove('active')
     menu.classList.remove('active')
+    complementosNav.classList.remove('active')
     e.preventDefault()
 })

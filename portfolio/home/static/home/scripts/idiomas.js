@@ -23,6 +23,37 @@ var navLinkContacto = document.getElementsByClassName('navbar__link__contacto')[
 var linkCvNav = document.getElementsByClassName('navbar__cv')[0]
 var navCopyright = document.getElementsByClassName('navbar__license')[0]
 
+// ---------- Variables About ----------- //
+var tituloAbout = document.getElementsByClassName('about-titulo')[0]
+var subtituloAbout = document.getElementsByClassName('about-parrafo')[0]
+var EtiquetaAbout =document.getElementsByClassName('about-etiquetas')[0]
+var TargetasTituloAbout = document.getElementsByClassName('about-targetas-titulo')[0]
+var TargetasParrafoAbout = document.getElementsByClassName('about-targetas-subtitulo')[0]
+var DescripcionAboutTitulo = document.getElementsByClassName('about-descripcion-titulo')[0]
+var DescripcionAboutParrafo = document.getElementsByClassName('about-descripcion-parrafo')[0]
+var tablaAboutEdad = document.getElementsByClassName('about-edad')[0]
+var tablaAboutAños = document.getElementsByClassName('about-edad-actual')[0]
+var tablaAboutIngles = document.getElementsByClassName('about-ingles')[0]
+var tablaAboutNivel = document.getElementsByClassName('about-nivel')[0]
+var tablaAboutEducacion = document.getElementsByClassName('about-educacion')[0]
+var tablaAboutTecnica = document.getElementsByClassName('about-tecnico')[0]
+var tablaAboutCiudad = document.getElementsByClassName('about-ciudad')[0]
+var tablaAboutBogota = document.getElementsByClassName('about-bogota')[0]
+var tablaAboutNumero = document.getElementsByClassName('about-telefono')[0]
+var tablaAboutTelefono = document.getElementsByClassName('about-numero')[0]
+var tablaAboutCorreo = document.getElementsByClassName('about-email')[0]
+var tablaAboutEmail = document.getElementsByClassName('about-correo')[0]
+var tablaAboutAfinacion = document.getElementsByClassName('about-afinación')[0]
+var tablaAboutGustos = document.getElementsByClassName('about-gustos')[0]
+var tablaAboutFortalezas = document.getElementsByClassName('about-fortalezas')[0]
+var tablaAboutFuerzas = document.getElementsByClassName('about-fuerzas')[0]
+var AboutBtnTwo = document.getElementsByClassName('about-right-btn')[0]
+var AboutBtnThree = document.getElementsByClassName('about-right-link')[0]
+
+
+
+
+
 // Efecto cambio de boton
 
 var idiomaBtn = document.getElementsByClassName('languaje-btn')[0]
@@ -58,6 +89,25 @@ idiomaBtn.addEventListener('click', function(){
         linkCvNav.textContent = 'DOWNLOAD CV'
         navCopyright.textContent = '@2023 Copyright | All rights reserved'
 
+        // ------- About --------- //
+        tituloAbout.innerHTML = 'KN<br>OW<br>ME!!'
+        subtituloAbout.textContent = '"WEB PROGRAMMING IS THE SOLID FOUNDATION TO BUILD A BRIGHT DIGITAL FUTURE AND FULL OF OPPORTUNITIES."'
+        EtiquetaAbout.textContent =  'LEARN / PROGRAM / ENJOY'
+        TargetasTituloAbout.textContent = 'SEE PORTFOLIO'
+        TargetasParrafoAbout.textContent = 'FIND MORE INFORMATION ABOUT MY KNOWLEDGE IN MY PROJECTS'
+        DescripcionAboutTitulo.textContent = 'ABOUT ME'
+        DescripcionAboutParrafo.innerHTML = '"I am <strong class="change-color">Daniel Gómez</strong>, I am <strong class="change-color">19 years old</strong> and my passion for <strong class="change-color" ">Programming</strong> and <strong class="change-color">Design</strong> has led me to have <strong class="change-color">2 years of experience</strong> in the field I am passionate about technology and strive to improve my <strong class="change-color">web development</strong> skills on a daily basis, with the goal of creating innovative solutions and making my mark in the digital world. "</p>'
+        tablaAboutEdad.textContent = 'AGE'
+        tablaAboutAños.textContent = '19 YEARS'
+        tablaAboutEducacion.textContent = 'EDUCATION'
+        tablaAboutTecnica.textContent = 'technique'
+        tablaAboutIngles.textContent = 'LEVEL'
+        tablaAboutNumero.textContent = 'NUMBER'
+        tablaAboutCorreo.textContent = 'EMAIL'
+        tablaAboutAfinacion.textContent = 'TUNINGS'
+        tablaAboutFuerzas.textContent = 'CONSTANCE - DISCIPLINE - LEADERSHIP'
+        AboutBtnTwo.textContent = 'MORE INFORMATION'
+        AboutBtnThree.textContent = 'SEE EXPERIENCE'
 
     }else if(!cambio){
         idiomaBtn.textContent = 'IDIOMA: ESP'; // ESPAÑOL ==============
@@ -84,5 +134,43 @@ idiomaBtn.addEventListener('click', function(){
         navLinkContacto.textContent = 'CONTACTAME'
         linkCvNav.textContent = 'DESCARGAR CV'
         navCopyright.textContent = '@2023 Copyright | TODOS LOS DERECHOS RESERVADOS'
+
+        // ------- About --------- //
+        tituloAbout.innerHTML = 'CON <br> OCE <br> ME!!'
+        subtituloAbout.textContent = '"LA PROGRAMACIÓN WEB ES LA BASE SÓLIDA PARA CONSTRUIR UN FUTURO DIGITAL BRILLANTE Y LLENO DE OPORTUNIDADES."'
+        EtiquetaAbout.textContent = 'APRENDE / PROGRAMA / DISFRUTA'
+        TargetasTituloAbout.textContent = 'VER PORTAFOLIO'
+        TargetasParrafoAbout.textContent = 'ENCUENTRA MAS INFORMACIÓN SOBRE MIS CONOCIMIENTOS EN MIS PROYECTOS'
+        DescripcionAboutTitulo.textContent = 'ACERCA DE MI'
+        DescripcionAboutParrafo.innerHTML = '"Soy <strong class="change-color">Daniel Gómez</strong>, tengo <strong class="change-color">19 años</strong> y mi pasión por la <strong class="change-color">programación</strong> y el <strong class="change-color">Diseño</strong> me ha llevado a tener <strong class="change-color">2 años de experiencia</strong> en el campo. Me apasiona la tecnología y me esfuerzo por mejorar mis habilidades en el <strong class="change-color">desarrollo web</strong> día a día, con el objetivo de crear soluciones innovadoras y dejar mi huella en el mundo digital."</p>'
+        tablaAboutEdad.textContent = 'EDAD'
+        tablaAboutAños.textContent = '19 AÑOS'
+        tablaAboutEducacion.textContent = 'EDUCACIÓN'
+        tablaAboutTecnica.textContent = 'TECNICO'
+        tablaAboutIngles.textContent = 'NIVEL'
+        tablaAboutNumero.textContent = 'NUMERO'
+        tablaAboutCorreo.textContent = 'CORREO'
+        tablaAboutAfinacion.textContent = 'AFINACIÓNES'
+        tablaAboutFortalezas.textContent = 'FORTALEZAS'
+        AboutBtnTwo.textContent = 'MAS INFORMACION'
+        tablaAboutFuerzas.textContent = 'CONSTANCIA - DISCIPLINA - LIDERAZGO'
+        AboutBtnThree.textContent = 'VER EXPERIENCIA'
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     }
 })
