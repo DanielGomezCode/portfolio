@@ -42,3 +42,131 @@
         font-size: 20px;
     }
 }
+
+.experience-container{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience-etiqueta-estudios, .experience-etiqueta-trabajos{
+    margin-top: 40px;
+    font-family: 'Bahiana';
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.experience-estudios, .experience-jobs{
+    width: 50%;
+}
+
+.experience-container h2{
+    font-family: 'Akronim';
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 70px;
+    align-items: center;
+    text-align: center;
+    color: var(--yellow);
+}
+
+.experiencia-subtitulo-estudios, .experiencia-subtitulo-trabajos{
+    font-family: 'poppins';
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    padding-top: 10px;
+    color: white;
+}
+
+.experiencia-flecha{
+    margin: 0 auto;
+    padding-top: 10px;
+    font-size: 20px;
+    color: var(--yellow);
+}
+
+.experiencia-cajas{
+    padding: 20px;
+    background: #181818;
+    box-shadow: 25px 25px 100px rgba(74, 74, 74, 0.5);
+    border-radius: 10px;
+    border: 1px solid var(--yellow);
+    margin: 15px;
+}
+
+.experiencia-seccion-uno{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experiencia-seccion-uno h3{
+    font-family: 'poppins';
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--yellow);
+}
+
+.experiencia-seccion-uno h4{
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--yellow);
+}
+
+.experiencia-caja-texto{
+    padding-top: 10px;
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1300px){
+    .experience-container h2{
+        font-size: 50px;
+        line-height: 45px;
+    }
+    .experiencia-subtitulo-estudios, .experiencia-subtitulo-trabajos{
+        font-size: 12px;
+        padding-top: 0;
+    }
+    .experience-etiqueta-estudios{
+        margin-top: 0;
+    }
+    .experiencia-caja-indice, .experiencia-caja-fecha, .experiencia-caja-texto{
+        font-size: 10px;
+    }
+    .experiencia-cajas{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 865px){
+    .experience{
+        overflow: auto;
+    }
+    .experience-etiqueta-estudios{
+        margin-top: 50px;
+    }
+    .experience-container{
+        flex-direction: column;
+    }
+    .experience-estudios, .experience-jobs{
+        width: 100%;
+    }
+    .experience-etiqueta-trabajos{
+        margin-top: 20px;
+    }
+    .experience .close-experience{
+        display: none;
+    }
+    .experiencia-seccion-uno h3, .experiencia-seccion-uno h4{
+        font-size: 10px;
+    }
+}

@@ -50,9 +50,21 @@ var tablaAboutFuerzas = document.getElementsByClassName('about-fuerzas')[0]
 var AboutBtnTwo = document.getElementsByClassName('about-right-btn')[0]
 var AboutBtnThree = document.getElementsByClassName('about-right-link')[0]
 
-
-
-
+// ---------- Variables Experience ----------- //
+var ExperienciaTituloEstudios = document.getElementsByClassName('experience-titulo-estudios')[0]
+var ExperienciaTituloTrabajos = document.getElementsByClassName('experience-titulo-trabajos')[0]
+var ExperienciaEtiquetaEstudios = document.getElementsByClassName('experience-etiqueta-estudios')[0]
+var ExterienciaEtiquetaTrabajos = document.getElementsByClassName('experience-etiqueta-trabajos')[0]
+var ExperienciaSubtituloEstudios = document.getElementsByClassName('experiencia-subtitulo-estudios')[0]
+var ExperienciaSubtituloTrabajos = document.getElementsByClassName('experiencia-subtitulo-trabajos')[0]
+var ExperienciaCajaUnoTitulo = document.getElementsByClassName('experience-title-one')[0]
+var ExperienciaCajaDosTitulo = document.getElementsByClassName('experience-title-two')[0]
+var ExperienciaCajaTresTitulo = document.getElementsByClassName('experience-title-three')[0]
+var ExperienciaCajaCuatroTitulo = document.getElementsByClassName('experience-title-four')[0]
+var ExperienciaCajaUnoParrafo = document.getElementsByClassName('experience-text-one')[0]
+var ExperienciaCajaDosParrafo = document.getElementsByClassName('experience-text-two')[0]
+var ExperienciaCajaTresParrafo = document.getElementsByClassName('experience-text-three')[0]
+var ExperienciaCajaCuatroParrafo = document.getElementsByClassName('experience-text-four')[0]
 
 // Efecto cambio de boton
 
@@ -108,6 +120,30 @@ idiomaBtn.addEventListener('click', function(){
         tablaAboutFuerzas.textContent = 'CONSTANCE - DISCIPLINE - LEADERSHIP'
         AboutBtnTwo.textContent = 'MORE INFORMATION'
         AboutBtnThree.textContent = 'SEE EXPERIENCE'
+        
+        // ------- Experiencia --------- //
+        ExperienciaSubtituloEstudios.textContent = 'KNOW MI TRAINING'
+        ExperienciaTituloEstudios.textContent = 'STUDIES'
+        ExperienciaEtiquetaEstudios.textContent = 'PORTFOLIO | STUDIES'
+        ExperienciaTituloTrabajos.textContent = 'EXPERIENCE'
+        ExperienciaSubtituloTrabajos.textContent = 'KNOW MY SKILL'
+        ExterienciaEtiquetaTrabajos.textContent = 'PORTFOLIO | JOBS'
+        ExperienciaCajaUnoTitulo.textContent = 'Bootcamp - Full stack web development - Programate Academy'
+        ExperienciaCajaUnoParrafo.textContent = 'As a graduate of this technology training, I am proud to have been in this hard and continuous learning program in the field of technology. I have spent much of my time improving my skills and expanding my knowledge in web development. I perform fabulously in managing the creation and design of web interfaces and I am always looking for new challenges and opportunities to continue growing professionally. I can easily perform both frontend and backend.'
+        ExperienciaCajaDosTitulo.textContent = 'Courses - Continuous learning'
+        ExperienciaCajaDosParrafo.textContent = 'I have been a fan of technology since the moment I set out as a child that this would be my thing. Once I finished my academic training I began to learn technologies and content managers related to web development independently through applications such as youtube, crehana, udemy, etc.'
+        ExperienciaCajaTresTitulo.textContent = 'TRADINGBLACK - Wordpress Developer'
+        ExperienciaCajaTresParrafo.textContent = 'Tradingblack is an online academy whose focus is financial investments, trading, forex, etc. My work within this business was to develop, design and manage everything necessary to have an academy of online courses. Make publicity and information relevant to it, etc.'
+        ExperienciaCajaCuatroTitulo.textContent = 'PROGRAMATE ACADEMY - Wordpress Developer'
+        ExperienciaCajaCuatroParrafo.textContent = 'Programate Academy is an inclusive and supportive programming school that trains people so that they can develop in the ICT area. My work within this academy was to correct errors and create updated information within its website, improving aesthetics, filling content, etc.'
+
+
+
+
+
+
+
+
 
     }else if(!cambio){
         idiomaBtn.textContent = 'IDIOMA: ESP'; // ESPAÑOL ==============
@@ -155,22 +191,22 @@ idiomaBtn.addEventListener('click', function(){
         AboutBtnTwo.textContent = 'MAS INFORMACION'
         tablaAboutFuerzas.textContent = 'CONSTANCIA - DISCIPLINA - LIDERAZGO'
         AboutBtnThree.textContent = 'VER EXPERIENCIA'
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+        // ------- Experiencia --------- //
+        ExperienciaSubtituloEstudios.textContent = 'CONOCE MI FORMACIÓN'
+        ExperienciaTituloEstudios.textContent = 'ESTUDIOS'
+        ExperienciaEtiquetaEstudios.textContent = 'PORTAFOLIO | EDUCACIÓN'
+        ExperienciaTituloTrabajos.textContent = 'EXPERIENCIA'
+        ExperienciaSubtituloTrabajos.textContent = 'CONOCE MI HABILIDAD'
+        ExterienciaEtiquetaTrabajos.textContent = 'PORTAFOLIO | TRABAJOS'
+        ExperienciaCajaUnoTitulo.textContent = 'Bootcamp - Desarrollo web full stack - Programate Academy'
+        ExperienciaCajaUnoParrafo.textContent = 'Como egresado de esta formacion tecnologica, me enorgullece haber estado en este programa de aprendizaje arduo y continuo en el campo de la tecnología. He dedicado gran parte de mi tiempo a mejorar mis habilidades y ampliar mis conocimientos en desarrollo web. Me desempeño fabulosamente en el manejo de creacion y diseño de interfaces web y siempre estoy buscando nuevos desafíos y oportunidades para seguir creciendo profesionalmente. Puedo desempeñarme facilmente tanto en frontend como en backend.'
+        ExperienciaCajaDosTitulo.textContent = 'Cursos - Aprendizaje continuo'
+        ExperienciaCajaDosParrafo.textContent = 'He sido fanatico de la tecnologia desde el momento que de niño me propuse que esto seria lo mio. Una vez acabe mi formación academica empece a aprender autonomamente tecnologias y gestores de contenido relacionadas al desarrollo web mediante aplicaciones como youtube, crehana, udemy, etc.'
+        ExperienciaCajaTresTitulo.textContent = 'TRADINGBLACK - Desarrollador Wordpress'
+        ExperienciaCajaTresParrafo.textContent = 'Tradingblack es una academia online cuyo enfoque son las inversiones financieras, trading, forex, etc. Mi labor dentro de este negocio fue desarrollar, diseñar y gestionar todo lo nesesario para tener una academia de cursos en linea. Realizar publicidad y informacion relevante para esta, etc.'
+        ExperienciaCajaCuatroTitulo.textContent = 'PROGRAMATE ACADEMY - Desarrollador Wordpress'
+        ExperienciaCajaCuatroParrafo.textContent = 'Programate Academy es una escuela de programación inclusiva y solidaria que forma personas para que puedan desarrollarse en el area TIC. Mi labor dentro de esta academia fue corregir errores y crear información actualizada dentro de su sitio web, mejorando estetica, llenando contenido, etc.'
+
     }
 })
