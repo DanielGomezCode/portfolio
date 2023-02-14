@@ -1,0 +1,44 @@
+.experience{
+    width: calc(100% - 100px);
+    height: 100vh;
+    margin-left: 100px;
+    background-color: #0B0B0B;
+    position: fixed;
+    bottom: -100%;
+    color: white;
+}
+
+.experience.active{
+    bottom: 0;
+}
+
+.experience .close-experience{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: var(--white);
+    border: 2px solid var(--white);
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.experience-container{
+    display: flex;
+}
+
+@media screen and (max-width:500px){
+    .experience{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .experience .close-experience{
+        bottom: 20px;
+        left: 20px;
+        top: auto;
+        font-size: 20px;
+    }
+}

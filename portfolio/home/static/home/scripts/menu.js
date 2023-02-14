@@ -17,6 +17,7 @@ var complementosNav = document.getElementsByClassName('complementos')[0]
 varBtn.addEventListener('click', function(){
   menu.classList.add('active')
   aboutContainer.classList.remove('active')
+  experienceContainer.classList.remove('active')
   inicioBar.classList.add('active')
   complementosNav.classList.add('active')
 })
