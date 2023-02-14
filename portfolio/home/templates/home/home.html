@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{% static 'home/styles/home.css' %}">
     <link rel="stylesheet" href="{% static 'home/styles/about.css' %}">
     <link rel="stylesheet" href="{% static 'home/styles/experience.css' %}">
+    <link rel="stylesheet" href="{% static 'home/styles/conocimientos.css' %}">
     <link rel="stylesheet" href="{% static 'home/styles/navbar.css' %}">
     <title>Portfolio | Dani-Dev</title>
     <!--Fuentes y iconos-->
@@ -20,6 +21,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akronim&family=Amatic+SC:wght@400;700&family=Bahiana&family=Barlow:wght@400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'home/fontawesome/fontawesome-free-6.1.1-web/css/all.css'%}">
+    <!-- Swiper JS -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+
+
 </head>
 <body class="body">
 
@@ -76,6 +84,334 @@
                 <p class="navbar__license change-color">@2023 Copyright | Todos los derechos reservados</p>
             </div>
         </nav>
+
+            <!------------------  CONOCIMIENTOS   ------------------->
+            <article class="conocimientos">
+                <i class="fa-solid fa-xmark close-conocimientos change-color"></i>
+                <div class="conocimientos-container">
+                    <h5 class="conocimientos-etiqueta">HABILIDADES | PORTAFOLIO</h5>
+                    <h2 class="conocimientos-titulo change-color">CONOCIMIENTOS</h2>
+                    <p class="conocimientos-subtitulo">Observa mis conocimientos y mis fortalezas en cada tecnologia</p>
+                    <div class="conocimientos-lenguajes">
+                        <h4 class="conocimientos-lenguajes-titulo change-color">"TECNOLOGIAS"</h4>
+                        <div class="conocimientos_lenguajes_container">
+                          <!-- Swiper -->
+                            <div class="swiper change-color mySwiper">
+                                <div class="swiper-wrapper">
+                                    <!--Wordpress-->
+                                     <div class="swiper-slide change-color">
+                                        <div class="info-box-sup">
+                                            <p class="info-sup-text change-color">EXPERTO</p>
+                                            <p class="info-sup-num change-color">00</p>
+                                        </div>
+                                        <div class="info-box-center change-color">
+                                            <i class="fa-brands fa-wordpress change-color"></i>
+                                        </div>
+                                        <div class="info-box-inf">
+                                            <h5 class="info-inf-title change-color">WORDPRESS</h5>
+                                            <p class="info-inf-parr">Domino WordPress y puedo crear grandes proyectos y funcionalidades con esta plataforma.</p>
+                                        </div>
+                                        <div class="info-box-tiquet change-color">
+                                            <p class="info-tiquet-one">Gestor</p>
+                                            <i class="fa-brands fa-wordpress info-tiquet-icon"></i>
+                                        </div>
+                                    </div>
+                                    <!--Html-->
+                                <div class="swiper-slide change-color">
+                                    <div class="info-box-sup">
+                                        <p class="info-sup-text change-color">AVANZADO</p>
+                                        <p class="info-sup-num change-color">01</p>
+                                    </div>
+                                    <div class="info-box-center change-color">
+                                        <i class="fa-brands fa-html5 change-color"></i>
+                                    </div>
+                                    <div class="info-box-inf">
+                                        <h5 class="info-inf-title change-color">HTML</h5>
+                                        <p class="info-inf-parr">Controlo la creación de código ordenado, gestiono nombres eficazmente y conozco etiquetas clave.</p>
+                                    </div>
+                                    <div class="info-box-tiquet change-color">
+                                        <p class="info-tiquet-one">Maquetacion</p>
+                                        <i class="fa-solid fa-code info-tiquet-icon"></i>
+                                    </div>
+                                </div>
+                                    <!--Css-->
+                                    <div class="swiper-slide change-color">
+                                        <div class="info-box-sup">
+                                            <p class="info-sup-text change-color">AVANZADO</p>
+                                            <p class="info-sup-num change-color">02</p>
+                                        </div>
+                                        <div class="info-box-center change-color">
+                                            <i class="fa-brands fa-css3 change-color"></i>
+                                        </div>
+                                        <div class="info-box-inf">
+                                            <h5 class="info-inf-title change-color">CSS</h5>
+                                            <p class="info-inf-parr">Creo y Diseño Código reutilizable 100%, variables para todo y diseño moderno dominado.</p>
+                                        </div>
+                                        <div class="info-box-tiquet change-color">
+                                            <p class="info-tiquet-one">Diseño</p>
+                                            <i class="fa-solid fa-palette info-tiquet-icon"></i>
+                                        </div>
+                                    </div>
+                                    <!--Javascript-->
+                                    <div class="swiper-slide change-color">
+                                        <div class="info-box-sup">
+                                            <p class="info-sup-text change-color">AVANZADO</p>
+                                            <p class="info-sup-num change-color">03</p>
+                                        </div>
+                                        <div class="info-box-center change-color">
+                                            <i class="fa-brands fa-js change-color"></i>
+                                        </div>
+                                        <div class="info-box-inf">
+                                            <h5 class="info-inf-title change-color">JS</h5>
+                                            <p class="info-inf-parr">Utilizo JavaScript de forma controlada, propiedades, funciones y eventos utilizados con habilidad.</p>
+                                        </div>
+                                        <div class="info-box-tiquet change-color">
+                                            <p class="info-tiquet-one">Logica</p>
+                                            <i class="fa-brands fa-js info-tiquet-icon"></i>
+                                        </div>
+                                    </div>
+                                    <!--Python-->
+                                    <div class="swiper-slide change-color">
+                                        <div class="info-box-sup">
+                                            <p class="info-sup-text change-color">AVANZADO</p>
+                                            <p class="info-sup-num change-color">04</p>
+                                        </div>
+                                        <div class="info-box-center change-color">
+                                            <i class="fa-brands fa-python change-color"></i>
+                                        </div>
+                                        <div class="info-box-inf">
+                                            <h5 class="info-inf-title change-color">PYTHON</h5>
+                                            <p class="info-inf-parr">Uso Python de forma decente, aprendo rápido y lo aplico para el desarrollo en Django.</p>
+                                        </div>
+                                        <div class="info-box-tiquet change-color">
+                                            <p class="info-tiquet-one">FrameWork</p>
+                                            <i class="fa-brands fa-python info-tiquet-icon"></i>
+                                        </div>
+                                    </div>
+                                    <!--Angular-->
+                                    <div class="swiper-slide change-color">
+                                        <div class="info-box-sup">
+                                            <p class="info-sup-text change-color">INTERMEDIO</p>
+                                            <p class="info-sup-num change-color">05</p>
+                                        </div>
+                                        <div class="info-box-center change-color">
+                                            <i class="fa-brands fa-angular change-color"></i>
+                                        </div>
+                                        <div class="info-box-inf">
+                                            <h5 class="info-inf-title change-color">ANGULAR</h5>
+                                            <p class="info-inf-parr">Angular manejado bien, servicios, rutas y manejo de modelos implementados eficazmente.</p>
+                                        </div>
+                                        <div class="info-box-tiquet change-color">
+                                            <p class="info-tiquet-one">FrameWork</p>
+                                            <i class="fa-solid fa-terminal info-tiquet-icon"></i>
+                                        </div>
+                                    </div>
+                                    <!--React-->
+                                    <div class="swiper-slide change-color">
+                                        <div class="info-box-sup">
+                                            <p class="info-sup-text change-color">INTERMEDIO</p>
+                                            <p class="info-sup-num change-color">06</p>
+                                        </div>
+                                        <div class="info-box-center change-color">
+                                            <i class="fa-brands fa-react change-color"></i>
+                                        </div>
+                                        <div class="info-box-inf">
+                                            <h5 class="info-inf-title change-color">REACT</h5>
+                                            <p class="info-inf-parr">Sé utilizar React de forma decente, aprendo rápido y mi fortaleza es el uso de useState.</p>
+                                        </div>
+                                        <div class="info-box-tiquet change-color">
+                                            <p class="info-tiquet-one">Libreria</p>
+                                            <i class="fa-brands fa-react info-tiquet-icon"></i>
+                                        </div>
+                                    </div>
+                                    <!--Django-->
+                                    <div class="swiper-slide change-color">
+                                        <div class="info-box-sup">
+                                            <p class="info-sup-text change-color">INTERMEDIO</p>
+                                            <p class="info-sup-num change-color">07</p>
+                                        </div>
+                                        <div class="info-box-center change-color">
+                                            <i class="fa-solid fa-laptop change-color"></i>
+                                        </div>
+                                        <div class="info-box-inf">
+                                            <h5 class="info-inf-title change-color">DJANGO</h5>
+                                            <p class="info-inf-parr">Utilizo Django de forma decente, aprendo rápido y mi aspiración es convertirme en un experto.</p>
+                                        </div>
+                                        <div class="info-box-tiquet change-color">
+                                            <p class="info-tiquet-one">Framework</p>
+                                            <i class="fa-solid fa-laptop info-tiquet-icon"></i>
+                                        </div>
+                                    </div>
+                                    <!--Fastapi-->
+                                    <div class="swiper-slide change-color">
+                                        <div class="info-box-sup">
+                                            <p class="info-sup-text change-color">BASICO</p>
+                                            <p class="info-sup-num change-color">08</p>
+                                        </div>
+                                        <div class="info-box-center change-color">
+                                            <i class="fa-solid fa-code-merge change-color"></i>
+                                        </div>
+                                        <div class="info-box-inf">
+                                            <h5 class="info-inf-title change-color">FASTAPI</h5>
+                                            <p class="info-inf-parr">Conozco FastAPI de manera básica pero deseo profundizar mis conocimientos.</p>
+                                        </div>
+                                        <div class="info-box-tiquet change-color">
+                                            <p class="info-tiquet-one">Marco Web</p>
+                                            <i class="fa-solid fa-code-merge info-tiquet-icon"></i>
+                                        </div>
+                                    </div>
+                                    <!--Node JS-->
+                                    <div class="swiper-slide change-color">
+                                        <div class="info-box-sup">
+                                            <p class="info-sup-text change-color">BASICO</p>
+                                            <p class="info-sup-num change-color">09</p>
+                                        </div>
+                                        <div class="info-box-center change-color">
+                                            <i class="fa-brands fa-node-js change-color"></i>
+                                        </div>
+                                        <div class="info-box-inf">
+                                            <h5 class="info-inf-title change-color">NODE JS</h5>
+                                            <p class="info-inf-parr">Utilizo Node.js para tareas en la terminal, descarga de contenido, y otras funcionalidades diversas.</p>
+                                        </div>
+                                        <div class="info-box-tiquet change-color">
+                                            <p class="info-tiquet-one">Entorno</p>
+                                            <i class="fa-brands fa-node info-tiquet-icon"></i>
+                                        </div>
+                                    </div>
+                                     <!--Mysql-->
+                                     <div class="swiper-slide change-color">
+                                        <div class="info-box-sup">
+                                            <p class="info-sup-text change-color">INTERMEDIO</p>
+                                            <p class="info-sup-num change-color">10</p>
+                                        </div>
+                                        <div class="info-box-center change-color">
+                                            <i class="fa-solid fa-database change-color"></i>
+                                        </div>
+                                        <div class="info-box-inf">
+                                            <h5 class="info-inf-title change-color">MYSQL</h5>
+                                            <p class="info-inf-parr">Manejo MySQL, puedo crear tablas, establecer relaciones correctamente y realizar consultas efectivas.</p>
+                                        </div>
+                                        <div class="info-box-tiquet change-color">
+                                            <p class="info-tiquet-one">Base de datos</p>
+                                            <i class="fa-solid fa-database info-tiquet-icon"></i>
+                                        </div>
+                                    </div>
+                                     <!--MongoDB-->
+                                     <div class="swiper-slide change-color">
+                                        <div class="info-box-sup">
+                                            <p class="info-sup-text change-color">BASICO</p>
+                                            <p class="info-sup-num change-color">11</p>
+                                        </div>
+                                        <div class="info-box-center change-color">
+                                            <i class="fa-solid fa-server change-color"></i>
+                                        </div>
+                                        <div class="info-box-inf">
+                                            <h5 class="info-inf-title change-color">MONGODB</h5>
+                                            <p class="info-inf-parr">Utilizo MongoDB pero busco mejorar mis habilidades en esta tecnología de bases de datos.</p>
+                                        </div>
+                                        <div class="info-box-tiquet change-color">
+                                            <p class="info-tiquet-one">Base de datos</p>
+                                            <i class="fa-solid fa-server info-tiquet-icon"></i>
+                                        </div>
+                                    </div>
+                                     <!--Figma-->
+                                     <div class="swiper-slide change-color">
+                                        <div class="info-box-sup">
+                                            <p class="info-sup-text change-color">AVANZADO</p>
+                                            <p class="info-sup-num change-color">12</p>
+                                        </div>
+                                        <div class="info-box-center change-color">
+                                            <i class="fa-brands fa-figma change-color"></i>
+                                        </div>
+                                        <div class="info-box-inf">
+                                            <h5 class="info-inf-title change-color">FIGMA</h5>
+                                            <p class="info-inf-parr">Utilizo MongoDB para todos mis diseños, es una herramienta principal para el diseño web.</p>
+                                        </div>
+                                        <div class="info-box-tiquet change-color">
+                                            <p class="info-tiquet-one">Diseño</p>
+                                            <i class="fa-brands fa-figma info-tiquet-icon"></i>
+                                        </div>
+                                    </div>
+                                     <!--Typescript-->
+                                     <div class="swiper-slide change-color">
+                                        <div class="info-box-sup">
+                                            <p class="info-sup-text change-color">INTERMEDIO</p>
+                                            <p class="info-sup-num change-color">13</p>
+                                        </div>
+                                        <div class="info-box-center change-color">
+                                            <i class="fa-brands fa-js change-color"></i>
+                                        </div>
+                                        <div class="info-box-inf">
+                                            <h5 class="info-inf-title change-color">TYPESCRIPT</h5>
+                                            <p class="info-inf-parr">Puedo ejecutar codigo typescript para tipar objetos, manejar la idea y ejecucíon de la tarea</p>
+                                        </div>
+                                        <div class="info-box-tiquet change-color">
+                                            <p class="info-tiquet-one">Logica</p>
+                                            <i class="fa-brands fa-js info-tiquet-icon"></i>
+                                        </div>
+                                    </div>
+                                     <!--SASS Y SCSS-->
+                                     <div class="swiper-slide change-color">
+                                        <div class="info-box-sup">
+                                            <p class="info-sup-text change-color">AVANZADO</p>
+                                            <p class="info-sup-num change-color">14-15</p>
+                                        </div>
+                                        <div class="info-box-center change-color">
+                                            <i class="fa-brands fa-sass change-color"></i>
+                                        </div>
+                                        <div class="info-box-inf">
+                                            <h5 class="info-inf-title change-color">SCSS|SASS</h5>
+                                            <p class="info-inf-parr">Manejo de forma correcta la herencia de clases, el uso de variables y el pre-procesamiento</p>
+                                        </div>
+                                        <div class="info-box-tiquet change-color">
+                                            <p class="info-tiquet-one">Preprocesador(es)</p>
+                                            <i class="fa-brands fa-sass info-tiquet-icon"></i>
+                                        </div>
+                                    </div>
+                                      <!--GIT-->
+                                     <div class="swiper-slide change-color">
+                                        <div class="info-box-sup">
+                                            <p class="info-sup-text change-color">AVANZADO</p>
+                                            <p class="info-sup-num change-color">16</p>
+                                        </div>
+                                        <div class="info-box-center change-color">
+                                            <i class="fa-brands fa-git-alt change-color"></i>
+                                        </div>
+                                        <div class="info-box-inf">
+                                            <h5 class="info-inf-title change-color">GIT</h5>
+                                            <p class="info-inf-parr">Tengo habilidades en las principales funcionalidades de Git, como ramas, commits, fusión y clonado</p>
+                                        </div>
+                                        <div class="info-box-tiquet change-color">
+                                            <p class="info-tiquet-one">S.Versiones</p>
+                                            <i class="fa-brands fa-git-alt info-tiquet-icon"></i>
+                                        </div>
+                                    </div>
+                                      <!--GITHUB-->
+                                      <div class="swiper-slide change-color">
+                                        <div class="info-box-sup">
+                                            <p class="info-sup-text change-color">AVANZADO</p>
+                                            <p class="info-sup-num change-color">17</p>
+                                        </div>
+                                        <div class="info-box-center change-color">
+                                            <i class="fa-brands fa-github change-color"></i>
+                                        </div>
+                                        <div class="info-box-inf">
+                                            <h5 class="info-inf-title change-color">GITHUB</h5>
+                                            <p class="info-inf-parr">Domino las principales funcionalidades de GitHub, repositorios, issues y pull requests.</p>
+                                        </div>
+                                        <div class="info-box-tiquet change-color">
+                                            <p class="info-tiquet-one">S.Versiones</p>
+                                            <i class="fa-brands fa-github info-tiquet-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="conocimientos-conclusion">En conclusión, tengo experiencia en varias herramientas informáticas, pero destaco en aquellas que han sido relevantes
+                    para mi crecimiento profesional, como Angular, Python, React y WordPress.</p>
+                </div>
+            </article>
 
             <!------------------  EXPERIENCE   ------------------->
             <section class="experience">
@@ -270,7 +606,7 @@
             </div>
         </div>
 
-        <img src="{% static 'home/img/tucan.png'%}" class="inicio__tucan" alt="">
+        <img src="{% static 'home/img/astro.png'%}" class="inicio__tucan" alt="">
     </section>
 
 
@@ -320,11 +656,15 @@
 
 
 
+
+
       <!--Scripts-->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="{% static 'home/scripts/jquery.min.js' %}"></script>
     <script src="{% static 'home/scripts/inicio.js' %}"></script>
     <script src="{% static 'home/scripts/about.js' %}"></script>
     <script src="{% static 'home/scripts/experience.js' %}"></script>
+    <script src="{% static 'home/scripts/conocimientos.js' %}"></script>
     <script src="{% static 'home/scripts/idiomas.js' %}"></script>
     <script src="{% static 'home/scripts/menu.js' %}"></script>
     <script src="{% static 'home/scripts/sidebar.js' %}"></script>

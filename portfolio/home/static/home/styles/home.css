@@ -10,7 +10,7 @@ body{
 
 .inicio{
     background-color: rgb(13, 13, 13);
-    background-image: url(../img/black.jpg);
+    background-image: url(../img/espacio.jpg);
     background-size: cover;
     display: flex;
     justify-content: space-between;
@@ -220,11 +220,28 @@ body{
 
 .inicio__tucan{
     position: absolute;
-    width: 550px;
-    bottom: 0;
+    width: 400px;
+    bottom: 0px;
     right: 25%;
+    animation: levitate 3s ease-in-out infinite;
 }
 
+@keyframes levitate {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  
+  
+  
+  
 
 /* ------------- MEDIA QUIERE -------------- */
 
@@ -236,8 +253,8 @@ body{
         right: 24%;
     }
     .inicio__tucan{
-        width: 300px;
-        right: 30%;
+        width: 200px;
+        right: 28%;
     }
     .inicio__titulo{
         font-size: 55px;
@@ -294,7 +311,7 @@ body{
     }
     .inicio__tucan{
         width: 200px;
-        right: 40%;
+        right: 30%;
     }
     .inicio__titulo{
         font-size: 45px;

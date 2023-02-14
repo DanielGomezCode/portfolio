@@ -120,6 +120,7 @@ idiomaBtn.addEventListener('click', function(){
         tablaAboutFuerzas.textContent = 'CONSTANCE - DISCIPLINE - LEADERSHIP'
         AboutBtnTwo.textContent = 'MORE INFORMATION'
         AboutBtnThree.textContent = 'SEE EXPERIENCE'
+        tablaAboutCiudad.textContent = 'CITY'
         
         // ------- Experiencia --------- //
         ExperienciaSubtituloEstudios.textContent = 'KNOW MI TRAINING'
@@ -191,6 +192,7 @@ idiomaBtn.addEventListener('click', function(){
         AboutBtnTwo.textContent = 'MAS INFORMACION'
         tablaAboutFuerzas.textContent = 'CONSTANCIA - DISCIPLINA - LIDERAZGO'
         AboutBtnThree.textContent = 'VER EXPERIENCIA'
+        tablaAboutCiudad.textContent = 'CIUDAD'
 
         // ------- Experiencia --------- //
         ExperienciaSubtituloEstudios.textContent = 'CONOCE MI FORMACIÓN'
