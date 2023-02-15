@@ -20,8 +20,23 @@ closeconocimientos.addEventListener('click', function(e){
 // Primer Slider (lenguajes)
 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 5,
-    spaceBetween: 30,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  breakpoints: {
+    500: {
+      slidesPerView: 2 // Tendre 3 cajas hasta que el n de pixeles sea menos de 768
+    },
+    769: {
+      slidesPerView: 3 // Tendre 3 cajas hasta que el n de pixeles sea menos de 768
+    },
+    1020: {
+      slidesPerView: 4
+    },
+    1220: {
+      slidesPerView: 5
+    },
+  },
+
     autoplay: {
       delay: 5000,
       disableOnInteraction: false
