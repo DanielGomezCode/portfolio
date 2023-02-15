@@ -66,6 +66,31 @@ var ExperienciaCajaDosParrafo = document.getElementsByClassName('experience-text
 var ExperienciaCajaTresParrafo = document.getElementsByClassName('experience-text-three')[0]
 var ExperienciaCajaCuatroParrafo = document.getElementsByClassName('experience-text-four')[0]
 
+// ---------- Variables Conocimientos ----------- //
+var conocimientosEtiqueta = document.getElementsByClassName('conocimientos-etiqueta')[0]
+var conocimientosTitulo = document.getElementsByClassName('conocimientos-titulo')[0]
+var conocimientosSubtitulo = document.getElementsByClassName('conocimientos-subtitulo')[0]
+var conocimientosConclusion = document.getElementsByClassName('conocimientos-conclusion')[0]
+var conocimientoslenguaje = document.getElementsByClassName('conocimientos-lenguajes-titulo')[0]
+var parrwordpress = document.getElementsByClassName('parr-wordpress')[0]
+var parrhtml = document.getElementsByClassName('parr-html')[0]
+var parrcss = document.getElementsByClassName('parr-css')[0]
+var parrjs = document.getElementsByClassName('parr-js')[0]
+var parrangular = document.getElementsByClassName('parr-angular')[0]
+var parrpython = document.getElementsByClassName('parr-python')[0]
+var parrreact = document.getElementsByClassName('parr-react')[0]
+var parrtypescript = document.getElementsByClassName('parr-typescript')[0]
+var parrdjango = document.getElementsByClassName('parr-django')[0]
+var parrfastapi = document.getElementsByClassName('parr-fastapi')[0]
+var parrnode = document.getElementsByClassName('parr-node')[0]
+var parrfigma = document.getElementsByClassName('parr-figma')[0]
+var parrmysql = document.getElementsByClassName('parr-mysql')[0]
+var parrmongodb = document.getElementsByClassName('parr-mongodb')[0]
+var parrsass = document.getElementsByClassName('parr-sass')[0]
+var parrgit = document.getElementsByClassName('parr-git')[0]
+var parrgithub = document.getElementsByClassName('parr-github')[0]
+
+
 // Efecto cambio de boton
 
 var idiomaBtn = document.getElementsByClassName('languaje-btn')[0]
@@ -137,7 +162,30 @@ idiomaBtn.addEventListener('click', function(){
         ExperienciaCajaTresParrafo.textContent = 'Tradingblack is an online academy whose focus is financial investments, trading, forex, etc. My work within this business was to develop, design and manage everything necessary to have an academy of online courses. Make publicity and information relevant to it, etc.'
         ExperienciaCajaCuatroTitulo.textContent = 'PROGRAMATE ACADEMY - Wordpress Developer'
         ExperienciaCajaCuatroParrafo.textContent = 'Programate Academy is an inclusive and supportive programming school that trains people so that they can develop in the ICT area. My work within this academy was to correct errors and create updated information within its website, improving aesthetics, filling content, etc.'
-
+        
+        // ------- Conocimientos --------- //
+        conocimientosTitulo.textContent = 'KNOWLEDGES'
+        conocimientosEtiqueta.textContent = 'SKILLS | PORTFOLIO'
+        conocimientosSubtitulo.textContent = 'Observe my knowledge and my strengths in each technology'
+        conocimientosConclusion.textContent = 'In conclusion, I have experience in various IT tools, but I stand out in those that have been relevant to my professional growth, such as Angular, Python, React and WordPress.'
+        conocimientoslenguaje.textContent = 'LANGUAGES AND TECHNOLOGIES'
+        parrwordpress.textContent = 'Im fluent in WordPress and I can create large projects and features with this platform.'
+        parrhtml.textContent = 'I control neat code creation, manage names effectively, and know key tags.'
+        parrcss.textContent = 'I create and Design 100% reusable code, variables for everything and modern design mastered.'
+        parrjs.textContent = 'I use JavaScript in a controlled way, properties, functions and events used with skill.'
+        parrpython.textContent = 'I use Python decently, learn fast, and apply it to Django development.'
+        parrreact.textContent = 'I know how to use React decently, Im a fast learner, and my strength is using useState.'
+        parrangular.textContent = 'Angular handled well, services, routes and model handling implemented effectively.'
+        parrdjango.textContent = 'I use Django decently, Im a fast learner, and my aspiration is to become an expert.'
+        parrfastapi.textContent = 'I know FastAPI in a basic way but I want to deepen my knowledge.'
+        parrnode.textContent = 'I use Node.js for terminal tasks, downloading content, and various other functionalities.'
+        parrmysql.textContent = 'I know MySQL, I can create tables, establish relationships correctly and perform effective queries.'
+        parrmongodb.textContent = 'I use MongoDB but am looking to improve my skills in this database technology.'
+        parrsass.textContent = 'Correctly handle class inheritance, variable usage and pre-processing'
+        parrtypescript.textContent = 'I can execute typescript code to type objects, handle the idea and execution of the task'
+        parrfigma.textContent = 'I use MongoDB for all my designs, it is a main tool for web design.'
+        parrgit.textContent = 'I have skills in the main functionalities of Git, such as branches, commits, merging and cloning'
+        parrgithub.textContent = 'I know the main functionalities of GitHub, repositories, issues and pull requests.'
 
 
 
@@ -209,6 +257,30 @@ idiomaBtn.addEventListener('click', function(){
         ExperienciaCajaTresParrafo.textContent = 'Tradingblack es una academia online cuyo enfoque son las inversiones financieras, trading, forex, etc. Mi labor dentro de este negocio fue desarrollar, diseñar y gestionar todo lo nesesario para tener una academia de cursos en linea. Realizar publicidad y informacion relevante para esta, etc.'
         ExperienciaCajaCuatroTitulo.textContent = 'PROGRAMATE ACADEMY - Desarrollador Wordpress'
         ExperienciaCajaCuatroParrafo.textContent = 'Programate Academy es una escuela de programación inclusiva y solidaria que forma personas para que puedan desarrollarse en el area TIC. Mi labor dentro de esta academia fue corregir errores y crear información actualizada dentro de su sitio web, mejorando estetica, llenando contenido, etc.'
+
+        // ------- Conocimientos --------- //
+        conocimientosTitulo.textContent = 'CONOCIMIENTOS'
+        conocimientosEtiqueta.textContent = 'HABILIDADES | PORTAFOLIO'
+        conocimientosSubtitulo.textContent = 'Observa mis conocimientos y mis fortalezas en cada tecnologia'
+        conocimientosConclusion.textContent = 'En conclusión, tengo experiencia en varias herramientas informáticas, pero destaco en aquellas que han sido relevantes para mi crecimiento profesional, como Angular, Python, React y WordPress.'
+        conocimientoslenguaje.textContent = 'LENGUAJES Y TECNOLOGIAS'
+        parrwordpress.textContent = 'Domino WordPress y puedo crear grandes proyectos y funcionalidades con esta plataforma.'
+        parrhtml.textContent = 'Controlo la creación de código ordenado, gestiono nombres eficazmente y conozco etiquetas clave.'
+        parrcss.textContent = 'Creo y Diseño Código reutilizable 100%, variables para todo y diseño moderno dominado.'
+        parrjs.textContent = 'Utilizo JavaScript de forma controlada, propiedades, funciones y eventos utilizados con habilidad.'
+        parrpython.textContent = 'Uso Python de forma decente, aprendo rápido y lo aplico para el desarrollo en Django.'
+        parrreact.textContent = 'Sé utilizar React de forma decente, aprendo rápido y mi fortaleza es el uso de useState.'
+        parrangular.textContent = 'Angular manejado bien, servicios, rutas y manejo de modelos implementados eficazmente.'
+        parrdjango.textContent = 'Utilizo Django de forma decente, aprendo rápido y mi aspiración es convertirme en un experto.'
+        parrfastapi.textContent = 'Conozco FastAPI de manera básica pero deseo profundizar mis conocimientos.'
+        parrnode.textContent = 'Utilizo Node.js para tareas en la terminal, descarga de contenido, y otras funcionalidades diversas.'
+        parrmysql.textContent = 'Manejo MySQL, puedo crear tablas, establecer relaciones correctamente y realizar consultas efectivas.'
+        parrmongodb.textContent = 'Utilizo MongoDB pero busco mejorar mis habilidades en esta tecnología de bases de datos.'
+        parrsass.textContent = 'Manejo de forma correcta la herencia de clases, el uso de variables y el pre-procesamiento'
+        parrtypescript.textContent = 'Puedo ejecutar codigo typescript para tipar objetos, manejar la idea y ejecucíon de la tarea'
+        parrfigma.textContent = 'Utilizo MongoDB para todos mis diseños, es una herramienta principal para el diseño web.'
+        parrgit.textContent = 'Tengo habilidades en las principales funcionalidades de Git, como ramas, commits, fusión y clonado'
+        parrgithub.textContent = 'Domino las principales funcionalidades de GitHub, repositorios, issues y pull requests.'
 
     }
 })
