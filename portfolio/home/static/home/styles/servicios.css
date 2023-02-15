@@ -1,0 +1,204 @@
+.servicios{
+    width: calc(100% - 100px);
+    height: 100vh;
+    margin-left: 100px;
+    background-color: #0B0B0B;
+    position: fixed;
+    right: -100%;
+    color: white;
+    overflow-y: auto;
+    background-image: url(../img/spacio-dos.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.servicios.active{
+    right: 0;
+}
+
+.servicios .close-servicios{
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: var(--white);
+    border: 2px solid var(--white);
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.servicios-container{
+    display: flex;
+}
+
+@media screen and (max-width:500px){
+    .servicios{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .servicios .close-servicios{
+        bottom: 20px;
+        left: 20px;
+        top: auto;
+        font-size: 20px;
+    }
+}
+
+.servicios-superior{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicios-superior-contenido{
+    width: 70%;
+}
+
+.servicios-etiqueta{
+    font-family: 'Amatic SC';
+    font-weight: 700;
+    font-size: 25px;
+    margin-left: 50px;
+    color: var(--white);
+}
+
+.servicios-titulo{
+    padding-top: 15px;
+    font-family: 'akronim';
+    font-weight: 400;
+    line-height: 62px;
+    font-size: 75px;
+    color: var(--yellow);
+}
+
+
+.servicios-subtitulo{
+    font-family: 'Bahiana';
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 20px;
+    color: #FFFFFF;
+}
+
+.servicio-superior-imagen{
+    position: relative;
+}
+
+.astro-service{
+    position: absolute;
+    width: 300px;
+    top: 50px;
+    right: 150px;
+    animation: levitar 3s ease-in-out infinite;
+}
+
+@keyframes levitar {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+.servicio-btn{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.servicio-btn-invitacion{
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 20px;
+    color: var(--yellow);
+    border: 1px solid var(--yellow);
+    font-family: 'Bahiana';
+    border-radius: 10px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.servicio-btn i{
+    margin: 0 10px;
+    font-size: 25px;
+    color: var(--yellow);
+}
+
+.servicio-btn-invitacion i{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.servicios-central{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.servicios-box{
+    margin: 10px;
+    border: 1px solid var(--yellow);
+    padding: 20px;
+    background-color: #0B0B0B;
+}
+
+.servicios-box:hover{
+    background: #181818;
+box-shadow: 25px 25px 100px rgba(74, 74, 74, 0.5);
+border-radius: 25px;
+}
+
+.ser-sup{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ser-sup-tiquet{
+    display: inline-block;
+    padding: 2px 20px;
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    border: 1px solid var(--yellow);
+}
+
+.ser-sup-ocu{
+    font-family: 'Bahiana';
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--yellow);
+}
+
+.ser-mid{
+    padding-top: 20px;
+}
+
+.ser-mid-title{
+    font-family: 'Bahiana';
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--yellow);
+}
+
+.ser-mid-hr{
+    display: inline-block;
+    width: 30px;
+    margin: 5px 0 15px;
+}
+
+.ser-mid-parr{
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+}
