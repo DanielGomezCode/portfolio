@@ -1,5 +1,4 @@
 // -------- Variables Home -------- //
-
 var EtiquetaInicio = document.getElementsByClassName('inicio__etiqueta')[0]
 var TituloInicio = document.getElementsByClassName('inicio__titulo')[0]
 var ProfesionInicio = document.getElementsByClassName('inicio__escritura')[0]
@@ -89,6 +88,24 @@ var parrmongodb = document.getElementsByClassName('parr-mongodb')[0]
 var parrsass = document.getElementsByClassName('parr-sass')[0]
 var parrgit = document.getElementsByClassName('parr-git')[0]
 var parrgithub = document.getElementsByClassName('parr-github')[0]
+
+// ---------- Variables Servicios ----------- //
+var serviciosEtiqueta = document.getElementsByClassName('servicios-etiqueta')[0]
+var serviciosTitulo = document.getElementsByClassName('servicios-titulo')[0]
+var serviciosSubtitulo = document.getElementsByClassName('servicios-subtitulo')[0]
+var serviciosBoton = document.getElementsByClassName('servicio-btn-invitacion')[0]
+var serviciosBoxTitleone = document.getElementsByClassName('box-one-service-title')[0]
+var serviciosBoxParrone = document.getElementsByClassName('box-one-service-parr')[0]
+var serviciosBoxTitleTwo = document.getElementsByClassName('box-two-service-title')[0]
+var serviciosBoxParrtwo = document.getElementsByClassName('box-two-service-parr')[0]
+var serviciosBoxTitleThree = document.getElementsByClassName('box-three-service-title')[0]
+var serviciosBoxParrThree = document.getElementsByClassName('box-three-service-parr')[0]
+var serviciosBoxTitleFour = document.getElementsByClassName('box-four-service-title')[0]
+var serviciosBoxParrFour = document.getElementsByClassName('box-four-service-parr')[0]
+var serviciosBoxTitleFive = document.getElementsByClassName('box-five-service-title')[0]
+var serviciosBoxParrFive = document.getElementsByClassName('box-five-service-parr')[0]
+var serviciosBoxTitleSix = document.getElementsByClassName('box-six-service-title')[0]
+var serviciosBoxParrFix = document.getElementsByClassName('box-six-service-parr')[0]
 
 
 // Efecto cambio de boton
@@ -187,11 +204,23 @@ idiomaBtn.addEventListener('click', function(){
         parrgit.textContent = 'I have skills in the main functionalities of Git, such as branches, commits, merging and cloning'
         parrgithub.textContent = 'I know the main functionalities of GitHub, repositories, issues and pull requests.'
 
-
-
-
-
-
+        // ------- Servicios --------- //
+        serviciosEtiqueta.textContent = 'PORTFOLIO | SERVICES'        
+        serviciosTitulo.textContent = 'DISCOVER AND EXPERIENCE OUR SERVICES'
+        serviciosSubtitulo.textContent = 'We are one click away to solve any technological challenge, 24/7 for you!"' 
+        serviciosBoton.innerHTML = 'CONTACT ME <i class="fa-solid fa-user change-color"></i>'
+        serviciosBoxTitleone.textContent = 'CREATION OF FUNCTIONAL WEBSITES'
+        serviciosBoxParrone.textContent = 'I can turn your dreams into digital reality by creating unique websites on WordPress. I also have advanced knowledge in web programming to create decent and presentable websites on frontend or backend.'
+        serviciosBoxTitleTwo.textContent = 'CREATION OF LANDING PAGES'
+        serviciosBoxParrtwo.textContent = 'I can create landing pages using vanilla frontend code or popular frameworks like Angular or React. However, my main strength lies in creating promotional pages using the Elementor tool in WordPress, with the ability to highlight important information. In summary, I can create custom landing pages according to the clients'
+        serviciosBoxTitleThree.textContent = 'CREATION OF WEB STORES'
+        serviciosBoxParrThree.textContent = 'I can develop and design functional and professional e-commerce stores using tools like WooCommerce and complementary plugins. I implement payment methods, taxes, inventory and other functionalities necessary for the success of the store.'
+        serviciosBoxTitleFour.textContent = 'CREATION OF ONLINE ACADEMIES'
+        serviciosBoxParrFour.textContent = 'I can develop and design online academies with payment methods, courses, lessons and classes using the LearnDash plugin. In addition, I implement an attractive web design and manage the platform for optimal operation.'
+        serviciosBoxTitleFive.textContent = 'SOLUTION OF ERRORS'
+        serviciosBoxParrFive.textContent = 'With my experience in creating WordPress projects, I can fix internal or external errors on your website. From issues within your hosting to internal frontend issues, I can confidently and effectively identify and fix issues.'
+        serviciosBoxTitleSix.textContent = 'CREATION OF WEBSITES'
+        serviciosBoxParrFix.textContent = 'Although I have little practice in pure code, I have developed pages highly praised by my tutors, which has given me the confidence to fulfill any role both on the frontend and backend.'
 
 
     }else if(!cambio){
@@ -282,5 +311,22 @@ idiomaBtn.addEventListener('click', function(){
         parrgit.textContent = 'Tengo habilidades en las principales funcionalidades de Git, como ramas, commits, fusión y clonado'
         parrgithub.textContent = 'Domino las principales funcionalidades de GitHub, repositorios, issues y pull requests.'
 
+        // ------- Servicios --------- //
+        serviciosEtiqueta.textContent = 'PORTAFOLIO | SERVICIOS'  
+        serviciosTitulo.textContent = 'DESCUBRE Y EXPERIMENTA NUESTROS SERVICIOS'
+        serviciosSubtitulo.textContent = 'Estamos a un clic de distancia para resolver cualquier desafío tecnológico, ¡24/7 para ti!"' 
+        serviciosBoton.innerHTML = 'CONTACTAME <i class="fa-solid fa-user change-color"></i>'
+        serviciosBoxTitleone.textContent = 'CREACIÓN DE SITIOS WEBS FUNCIONALES'
+        serviciosBoxParrone.textContent = 'Puedo convertir tus sueños en realidad digital mediante la creación de sitios web únicos en WordPress. También tengo conocimientos avanzados en programación web para crear sitios web decentes y presentables en frontend o backend.'
+        serviciosBoxTitleTwo.textContent = 'CREACION DE LANDING PAGES'
+        serviciosBoxParrtwo.textContent = 'Puedo crear páginas de destino utilizando código de interfaz de vainilla o marcos populares como Angular o React. Sin embargo, mi principal fortaleza radica en crear páginas promocionales usando la herramienta Elementor en WordPress, con la capacidad de resaltar información importante. En resumen, puedo crear páginas de destino personalizadas según los clientes.'
+        serviciosBoxTitleThree.textContent = 'CREACION DE TIENDAS WEB'
+        serviciosBoxParrThree.textContent = 'Puedo desarrollar y diseñar tiendas de comercio electrónico funcionales y profesionales utilizando herramientas como WooCommerce y complementos complementarios. Implemento métodos de pago, impuestos, inventario y otras funcionalidades necesarias para el éxito de la tienda.'
+        serviciosBoxTitleFour.textContent = 'CREACIÓN DE ACADEMIAS ONLINE'
+        serviciosBoxParrFour.textContent = 'Puedo desarrollar y diseñar academias en línea con métodos de pago, cursos, lecciones y clases usando el complemento LearnDash. Además, implemento un diseño web atractivo y administro la plataforma para su óptimo funcionamiento.'
+        serviciosBoxTitleFive.textContent = 'SOLUCIÓN DE ERRORES'
+        serviciosBoxParrFive.textContent = 'Con mi experiencia en la creación de proyectos de WordPress, puedo corregir errores internos o externos en su sitio web. Desde problemas dentro de su alojamiento hasta problemas internos de interfaz, puedo identificar y solucionar problemas con confianza y eficacia.'
+        serviciosBoxTitleSix.textContent = 'CREACIÓN DE SITIOS WEB'
+        serviciosBoxParrFix.textContent = 'Aunque tengo poca práctica en código puro, he desarrollado páginas muy elogiadas por mis tutores, lo que me ha dado la confianza para cumplir cualquier rol tanto en el frontend como en el backend.'  
     }
 })
