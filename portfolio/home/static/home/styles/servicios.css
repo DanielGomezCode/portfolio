@@ -254,6 +254,9 @@ border-radius: 25px;
 }
 
 @media screen and (max-width: 720px){
+    .servicios{
+        height: 150vh;
+    }
     .servicios-central{
         grid-template-columns: auto;
     }
