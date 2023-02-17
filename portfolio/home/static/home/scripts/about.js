@@ -26,3 +26,13 @@ function changeImage() {
   image.src = imagenesAbout[contadorAbout];
   contadorAbout = (contadorAbout + 1) % imagenesAbout.length;
 }
+
+//mostrar portafolio
+var btnAboutProyectos = document.getElementsByClassName('about-targetas-titulo')[0]
+var abrirPort = document.getElementsByClassName('portafolio')[0]
+
+btnAboutProyectos.addEventListener('click', function(e){
+    abrirPort.classList.add('active')
+    aboutContainer.classList.remove('active')
+    e.preventDefault()
+})

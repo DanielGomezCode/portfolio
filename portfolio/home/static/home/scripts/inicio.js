@@ -69,3 +69,13 @@ btnInicioLink.addEventListener('click', function(e){
     complementosNav.classList.remove('active')
     e.preventDefault()
 })
+
+//mostrar portafolio
+var btnInicioProyectos = document.getElementsByClassName('inicio__boton')[0]
+var abrirPort = document.getElementsByClassName('portafolio')[0]
+
+btnInicioProyectos.addEventListener('click', function(e){
+    abrirPort.classList.add('active')
+    InicioContainer.classList.add('active')
+    e.preventDefault()
+})

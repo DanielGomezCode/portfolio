@@ -6,6 +6,7 @@ var btncontactoLink = document.getElementsByClassName('navbar__link__contacto')[
 
 btncontactoLink.addEventListener('click', function(e){
     contactoContainer.classList.add('active')
+    menu.classList.remove('active')
     e.preventDefault()
 })
 

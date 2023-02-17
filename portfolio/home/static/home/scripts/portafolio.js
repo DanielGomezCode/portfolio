@@ -6,6 +6,7 @@ var btnportafolioLink = document.getElementsByClassName('navbar__link__portafoli
 
 btnportafolioLink.addEventListener('click', function(e){
     portafolioContainer.classList.add('active')
+    menu.classList.remove('active')
     e.preventDefault()
 })
 
@@ -27,3 +28,13 @@ function nextImage() {
 }
 
 setInterval(nextImage, timeInterval);
+
+//mostrar conocimientos
+var btnportCono = document.getElementsByClassName('portafolio-btn')[0]
+var abrirCono = document.getElementsByClassName('conocimientos')[0]
+
+btnportCono.addEventListener('click', function(e){
+    abrirCono.classList.add('active')
+    portafolioContainer.classList.remove('active')
+    e.preventDefault()
+})

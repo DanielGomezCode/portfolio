@@ -36,6 +36,7 @@
     }
 
     .experience .close-experience{
+        display: none;
         bottom: 20px;
         left: 20px;
         top: auto;

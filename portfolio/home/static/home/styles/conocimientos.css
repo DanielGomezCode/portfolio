@@ -1,4 +1,5 @@
 .conocimientos{
+    display: none;
     width: calc(100% - 100px);
     height: 100vh;
     margin-left: 100px;
@@ -6,10 +7,15 @@
     position: fixed;
     top: -100%;
     color: white;
+    display: none;
+    overflow: auto;
+    transition: 0.5s ease;
 }
 
 .conocimientos.active{
     top: 0;
+    display: block;
+    transition: 0.5s ease;
 }
 
 .conocimientos .close-conocimientos{
@@ -37,6 +43,7 @@
     }
 
     .conocimientos .close-conocimientos{
+        display: none;
         bottom: 20px;
         left: 20px;
         top: auto;

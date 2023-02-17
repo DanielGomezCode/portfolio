@@ -10,13 +10,18 @@
     background-image: url(../img/spacio-dos.jpg);
     background-size: cover;
     background-attachment: fixed;
+    display: none;
+    transition: 0.5s ease;
 }
 
 .portafolio.active{
     right: 0;
+    display: block;
+    transition: 0.5s ease;
 }
 
 .portafolio .close-portafolio{
+    display: none;
     position: absolute;
     top: 20px;
     left: 50px;
