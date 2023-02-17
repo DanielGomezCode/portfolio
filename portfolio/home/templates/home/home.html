@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{% static 'home/styles/navbar.css' %}">
     <link rel="stylesheet" href="{% static 'home/styles/servicios.css' %}">
     <link rel="stylesheet" href="{% static 'home/styles/portafolio.css' %}">
+    <link rel="stylesheet" href="{% static 'home/styles/contacto.css' %}">
     <title>Portfolio | Dani-Dev</title>
     <!--Fuentes y iconos-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -83,10 +84,38 @@
                 <a href="" class="navbar__link__contacto change-color">CONTACTAME</a>
             </div>
             <div class="navbar__copyright">
-                <a href="" class="navbar__cv change-color">DESCARGAR CV <i class="fa-solid fa-arrow-pointer"></i></a>
+                <a href="{% static 'home/songs/cv.pdf''%}" download class="navbar__cv change-color">DESCARGAR CV <i class="fa-solid fa-arrow-pointer"></i></a>
                 <p class="navbar__license change-color">@2023 Copyright | Todos los derechos reservados</p>
             </div>
         </nav>
+
+            <!------------------ CONTACTO ------------------->
+            <section class="contacto">
+                <i class="fa-solid fa-xmark close-contacto change-color"></i>
+                <div class="contacto-container">
+                    <div class="contact-content">
+                        <h5 class="contact-etiqueta">CONTACTO | PORTAFOLIO</h5>
+                        <h2 class="contact-titulo change-color">CONTAC <br> TAME</h2>
+                        <hr class="contact-separador change-color">
+                        <p class="contact-subtitulo">¿Te gusto mi trabajo? Dejame ayudarte al tuyo</p>
+                        <div class="contact-redes">
+                            <div class="contact-link">
+                                <a class="change-color" href="https://wa.link/olnci5" target="_blank"><i class="fa-brands fa-whatsapp"></i>+57 313 393 2455</a>
+                            </div>
+                            <div class="contact-link">
+                                <a class="change-color" href="https://www.linkedin.com/in/daniel-gomez-developer/" target="_blank"><i class="fa-brands fa-linkedin-in"></i>Daniel Gómez/</a>
+                            </div>
+                            <div class="contact-link">
+                                <a class="change-color" href="https://github.com/DanielGomezCode" target="_blank"><i class="fa-brands fa-github"></i>DanielGomezCode</a>
+                            </div>
+                            <div class="contact-link">
+                                <a class="change-color" href="" target="_blank"><i class="fa-solid fa-envelope"></i>danielgomezcode@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-img"></div>
+                </div>
+            </section>
 
             <!---------------------  PORTAFOLIO  ---------------------->
             <article class="portafolio">
@@ -657,7 +686,7 @@
                         <div class="about-tabla">
                             <div class="about-tabla-box change-color">
                                 <h4 class="about-tabla-box-titulo about-ingles change-color">NIVEL DE INGLES</h4>
-                                <h5 class="about-tabla-box-texto about-nivel">B2</h5>
+                                <h5 class="about-tabla-box-texto about-nivel">B1</h5>
                             </div>
                             <div class="about-tabla-box change-color">
                                 <h4 class="about-tabla-box-titulo about-edad change-color">EDAD</h4>
@@ -806,6 +835,7 @@
     <script src="{% static 'home/scripts/conocimientos.js' %}"></script>
     <script src="{% static 'home/scripts/servicios.js' %}"></script>
     <script src="{% static 'home/scripts/portafolio.js' %}"></script>
+    <script src="{% static 'home/scripts/contacto.js' %}"></script>
     <script src="{% static 'home/scripts/idiomas.js' %}"></script>
     <script src="{% static 'home/scripts/menu.js' %}"></script>
     <script src="{% static 'home/scripts/sidebar.js' %}"></script>

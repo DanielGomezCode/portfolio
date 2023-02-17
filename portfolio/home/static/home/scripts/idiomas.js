@@ -114,6 +114,11 @@ var portfolioTitulo = document.getElementsByClassName('portafolio-titulo')[0]
 var portfolioSubtitulo = document.getElementsByClassName('portafolio-subtitulo')[0]
 var portfolioBtn = document.getElementsByClassName('portafolio-btn')[0]
 
+// ---------- Variables Contacto ----------- //
+var contactoEtiqueta = document.getElementsByClassName('contact-etiqueta')[0]
+var contactoTitulo = document.getElementsByClassName('contact-titulo')[0]
+var contactoSubtitulo = document.getElementsByClassName('contact-subtitulo')[0]
+
 // Efecto cambio de boton
 
 var idiomaBtn = document.getElementsByClassName('languaje-btn')[0]
@@ -227,11 +232,17 @@ idiomaBtn.addEventListener('click', function(){
         serviciosBoxParrFive.textContent = 'With my experience in creating WordPress projects, I can fix internal or external errors on your website. From issues within your hosting to internal frontend issues, I can confidently and effectively identify and fix issues.'
         serviciosBoxTitleSix.textContent = 'CREATION OF WEBSITES'
         serviciosBoxParrFix.textContent = 'Although I have little practice in pure code, I have developed pages highly praised by my tutors, which has given me the confidence to fulfill any role both on the frontend and backend.'
+        
         // ------- Portafolio --------- //
         portfolioEtiqueta.textContent = 'PROJECTS | PORTFOLIO'
         portfolioTitulo.innerHTML = 'PORT <br> FOLIO'
         portfolioSubtitulo.textContent = '"Join me on a creative journey of discovery and take a look at my projects and works, I assure you that you will not be disappointed!"'
         portfolioBtn.innerHTML = 'MORE INFO <i class="fa-solid fa-file change-color"></i>'
+
+        // ------- Contacto --------- //
+        contactoEtiqueta.textContent = 'CONTACT | PORTFOLIO'
+        contactoTitulo.innerHTML = 'CONTACT <br> ME'
+        contactoSubtitulo.textContent = 'Do you like my work? let me help yours'
 
 
     }else if(!cambio){
@@ -346,8 +357,9 @@ idiomaBtn.addEventListener('click', function(){
         portfolioSubtitulo.textContent = 'ÚNETE A MÍ EN UN VIAJE DE DESCUBRIMIENTO CREATIVO Y ECHA UN VISTAZO A MIS PROYECTOSY TRABAJOS, ¡TE ASEGURO QUE NO TE DECEPCIONARÁN!'
         portfolioBtn.innerHTML = 'MAS INFORMACIÓN <i class="fa-solid fa-file change-color"></i>'
     
-
-
-
+        // ------- Contacto --------- //
+        contactoEtiqueta.textContent = 'CONTACTO | PORTAFOLIO'
+        contactoTitulo.innerHTML = 'CONTAC <br> TAME'
+        contactoSubtitulo.textContent = '¿Te gusto mi trabajo? Dejame ayudarte al tuyo'
     }
 })

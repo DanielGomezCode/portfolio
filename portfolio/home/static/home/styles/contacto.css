@@ -1,0 +1,151 @@
+.contacto{
+    width: calc(100% - 100px);
+    height: 100vh;
+    margin-left: 100px;
+    background-color: #0B0B0B;
+    position: fixed;
+    right: -100%;
+    color: white;
+    background-image: url(../img/spacio-dos.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contacto.active{
+    right: 0;
+}
+
+.contacto .close-contacto{
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: var(--white);
+    border: 2px solid var(--white);
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.contacto-container{
+    display: flex;
+}
+
+@media screen and (max-width:500px){
+    .contacto{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .contacto .close-contacto{
+        bottom: 20px;
+        left: 20px;
+        top: auto;
+        font-size: 20px;
+    }
+}
+
+.contacto-container{
+    padding: 60px 30px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.contact-etiqueta{
+    font-family: 'Amatic SC';
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.contact-titulo{
+    font-family: 'Akronim';
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: var(--yellow);
+}
+
+.contact-separador{
+    border-color: var(--yellow);
+    width: 60px;
+    margin: 0 auto;
+}
+
+.contact-subtitulo{
+    margin-top: 20px;
+    font-family: 'Bahiana';
+    font-weight: 400;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.contact-img{
+    width: 80%;
+    margin: 0 0 0 20px;
+    text-align: center;
+    background-image: url(../img/contact-two.jpg);
+    border-radius: 15px;
+    background-size: cover;
+    background-position: bottom;
+    transition: 0.5s ease;
+}
+
+.contact-img:hover{
+    transition: 0.5s ease;
+    filter: drop-shadow(10px 10px 100px rgba(255, 255, 255, 0.5));
+}
+
+.contact-link{
+    margin: 20px 0;
+}
+
+.contact-link a{
+    font-family: 'bahiana';
+    font-size: 30px;
+    color: var(--yellow);
+    text-decoration: none;
+}
+
+.contact-link a i{
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 1300px){
+    .contact-content{
+        width: 40%;
+    }
+    
+    .contact-titulo{
+        font-size: 70px;
+        line-height: 55px;
+    }
+    .contact-subtitulo{
+        font-size: 18px;
+    }
+    .contact-link a{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .contact-content{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 830px){
+    .contact-img{
+        display: none;
+    }
+    .contact-content{
+        margin-top: 25px;
+        width: 100%;
+    }
+}

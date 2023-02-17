@@ -7,6 +7,9 @@
     right: -100%;
     color: white;
     overflow: auto;
+    background-image: url(../img/spacio-dos.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .portafolio.active{

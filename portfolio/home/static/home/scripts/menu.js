@@ -23,6 +23,7 @@ varBtn.addEventListener('click', function(){
   portafolioContainer.classList.remove('active')
   inicioBar.classList.add('active')
   complementosNav.classList.add('active')
+  contactoContainer.classList.remove('active')
 })
 
 varBtn.addEventListener('dblclick', function(){
@@ -38,6 +39,7 @@ varbtnmovil.addEventListener('click', function(){
   inicioBar.classList.add('active')
   complementosNav.classList.add('active')
   portafolioContainer.classList.remove('active')
+  contactoContainer.classList.remove('active')
 })
 
 

@@ -6,6 +6,9 @@
     position: fixed;
     right: -100%;
     color: white;
+    background-image: url(../img/spacio-dos.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .about.active{
