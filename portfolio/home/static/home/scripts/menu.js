@@ -20,6 +20,7 @@ varBtn.addEventListener('click', function(){
   experienceContainer.classList.remove('active')
   conocimientosContainer.classList.remove('active')
   serviciosContainer.classList.remove('active')
+  portafolioContainer.classList.remove('active')
   inicioBar.classList.add('active')
   complementosNav.classList.add('active')
 })
@@ -36,6 +37,7 @@ varbtnmovil.addEventListener('click', function(){
   conocimientosContainer.classList.remove('active')
   inicioBar.classList.add('active')
   complementosNav.classList.add('active')
+  portafolioContainer.classList.remove('active')
 })
 
 

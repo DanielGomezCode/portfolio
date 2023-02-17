@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{% static 'home/styles/conocimientos.css' %}">
     <link rel="stylesheet" href="{% static 'home/styles/navbar.css' %}">
     <link rel="stylesheet" href="{% static 'home/styles/servicios.css' %}">
+    <link rel="stylesheet" href="{% static 'home/styles/portafolio.css' %}">
     <title>Portfolio | Dani-Dev</title>
     <!--Fuentes y iconos-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,6 +87,44 @@
                 <p class="navbar__license change-color">@2023 Copyright | Todos los derechos reservados</p>
             </div>
         </nav>
+
+            <!---------------------  PORTAFOLIO  ---------------------->
+            <article class="portafolio">
+                <i class="fa-solid fa-xmark close-portafolio change-color"></i>
+                <div class="portafolio-container">
+                    <div class="portafolio-sup">
+                        <div class="portfolio-sup-content">
+                            <h5 class="portafolio-etiqueta">PROYECTOS | PORTAFOLIO</h5>
+                            <hr class="portafolio-separador change-color">
+                            <h2 class="portafolio-titulo change-color">PORTA <br> FOLIO</h2>
+                            <p class="portafolio-subtitulo">"Únete a mí en un viaje de descubrimiento creativo y echa un vistazo a mis proyectosy trabajos, ¡te aseguro que no te decepcionarán!"</p>
+                            <a href="" class="portafolio-btn change-color">MAS INFORMACIÓN <i class="fa-solid fa-file change-color"></i></a>
+                        </div>
+                        <div class="portfolio-sup-img">
+                            <a href="https://tradingblackedu.com/" target="_blank"><img src="{% static 'home/img/programate_academy.png' %}" alt="Programate Academy"></a>
+                            <img href="https://tradingblackedu.com/" src="{% static 'home/img/tradingblack.png' %}" alt="Tradingblack">
+                            <img src="{% static 'home/img/mimejoraccesorio.png' %}" alt="Mi mejor Accesorio">
+                            <img src="{% static 'home/img/soundwave.png' %}" alt="soundwave">
+                            <img src="{% static 'home/img/isgreatshop.png' %}" alt="IsGreatShop">
+                            <img src="{% static 'home/img/boxing.png' %}" alt="Boxing">
+                            <img src="{% static 'home/img/bodas.png' %}" alt="UniversalgroupBodas">
+                            <img src="{% static 'home/img/isgreatshopcol.png' %}" alt="IsGreatShopCol">
+                        </div>
+                    </div>
+                </div>
+                   <!--imagenes-->
+                   <div class="portafolio-mid">
+                    <!--Grids-->
+                    <a href="https://programateacademy.com/" target="_blank"><img src="{% static 'home/img/programate_academy.png' %}" alt="Programate Academy"></a>
+                    <a href="https://tradingblackedu.com/" target="_blank"><img src="{% static 'home/img/tradingblack.png' %}" alt="TradingBlack"></a>
+                    <a href="https://mimejoraccesorio.com/" target="_blank"><img src="{% static 'home/img/mimejoraccesorio.png' %}" alt="Mimejoraccesorio"></a>
+                    <a href="https://proyect-soundwave.surge.sh/" target="_blank"><img src="{% static 'home/img/soundwave.png' %}" alt="Soundwave"></a>
+                    <a href="https://danielgomezcode.github.io/isgreat/" target="_blank"><img src="{% static 'home/img/isgreatshop.png' %}" alt="Isgreatshop"></a>
+                    <a href="http://bienvenidoboxeo-h.surge.sh/" target="_blank"><img src="{% static 'home/img/boxing.png' %}" alt="Boxing"></a>
+                    <a href="https://bodas2022.universalgroup.com.co/wp/bodas/" target="_blank"><img src="{% static 'home/img/bodas.png' %}" alt="Bodas Universal-Group"></a>
+                    <a href="https://isgreatshop.com/" target="_blank"><img src="{% static 'home/img/isgreatshopcol.png' %}" alt="IsgreatshopCol"></a>
+                </div>
+            </article>
 
             <!---------------------  SERVICIOS  ---------------------->
             <section class="servicios">
@@ -766,6 +805,7 @@
     <script src="{% static 'home/scripts/experience.js' %}"></script>
     <script src="{% static 'home/scripts/conocimientos.js' %}"></script>
     <script src="{% static 'home/scripts/servicios.js' %}"></script>
+    <script src="{% static 'home/scripts/portafolio.js' %}"></script>
     <script src="{% static 'home/scripts/idiomas.js' %}"></script>
     <script src="{% static 'home/scripts/menu.js' %}"></script>
     <script src="{% static 'home/scripts/sidebar.js' %}"></script>

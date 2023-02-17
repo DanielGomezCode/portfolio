@@ -1,0 +1,220 @@
+.portafolio{
+    width: calc(100% - 100px);
+    height: 100vh;
+    margin-left: 100px;
+    background-color: #0B0B0B;
+    position: fixed;
+    right: -100%;
+    color: white;
+    overflow: auto;
+}
+
+.portafolio.active{
+    right: 0;
+}
+
+.portafolio .close-portafolio{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: var(--white);
+    border: 2px solid var(--white);
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.portafolio-container{
+    display: flex;
+}
+
+@media screen and (max-width:500px){
+    .portafolio{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .portafolio .close-portafolio{
+        display: none;
+    }
+}
+
+.portafolio-container{
+    padding: 30px 60px;
+}
+
+.portafolio-sup{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio-sup-content{
+    width: 30%;
+}
+
+.portfolio-sup-img{
+    position: relative;
+    width: 70%;
+    text-align: center;
+    transition: 0.5s ease-in;
+}
+
+.portfolio-sup-img:hover{
+    transition: 0.5s ease;
+    filter: drop-shadow(10px 10px 100px rgba(255, 245, 0, 0.5));
+}
+
+.portfolio-sup-img img{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left:  170px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+.portfolio-sup-img img.active{
+    opacity: 1;
+}
+
+.portafolio-etiqueta{
+    font-family: 'Amatic SC';
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.portafolio-separador{
+    display: inline-block;
+    width: 30px;
+    border-color: var(--yellow);
+    margin: 10px 0;
+}
+
+.portafolio-titulo{
+    font-family: 'Akronim';
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 100px;
+    text-transform: uppercase;
+    color: var(--yellow);
+}
+
+.portafolio-subtitulo{
+    font-family: 'Bahiana';
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.portafolio-btn{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 5px 20px;
+    border: 1px solid var(--yellow);
+    border-radius: 10px;
+    font-family: 'Bahiana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--yellow);
+    text-decoration: none;
+}
+
+.portafolio-btn i{
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.portafolio-mid{
+    padding: 50px 30px 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 5px;
+}
+
+.portafolio-mid a img{
+    width: 280px;
+}
+
+.portafolio-mid a img:hover{
+    transition: 0.5s ease;
+    filter: drop-shadow(10px 10px 100px rgba(255, 245, 0, 0.5));
+}
+
+@media screen and (max-width: 1300px){
+    .portfolio-sup-img img{
+        width: 450px;
+        top: 75px;
+    }
+    .portafolio-mid{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .portafolio-titulo{
+        font-size: 80px;
+        line-height: 70px;
+    }
+    .portfolio-sup-img img{
+        width: 400px;
+        top: 75px;
+        left: 60px;
+    }   
+    .portafolio-mid{
+        grid-template-columns: auto auto;
+    }
+    .portafolio-mid a img{
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: 820px){
+    .portfolio-sup-img{
+        display: none;
+    }
+    .portfolio-sup-content{
+        width: 100%;
+        text-align: center;
+    }
+    .portafolio-mid{
+        text-align: center;
+    }
+    .portafolio-mid a img{
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 740px){
+    .portafolio-mid{
+        grid-template-columns: auto;
+    }
+    .portafolio-mid a img{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .portafolio-mid a img{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .portafolio-mid{
+        padding-top: 0;
+    }
+    .portafolio-mid a img{
+        width: 300px;
+    }
+}

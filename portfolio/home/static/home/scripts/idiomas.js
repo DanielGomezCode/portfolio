@@ -108,6 +108,12 @@ var serviciosBoxTitleSix = document.getElementsByClassName('box-six-service-titl
 var serviciosBoxParrFix = document.getElementsByClassName('box-six-service-parr')[0]
 
 
+// ---------- Variables Portafolio ----------- //
+var portfolioEtiqueta = document.getElementsByClassName('portafolio-etiqueta')[0]
+var portfolioTitulo = document.getElementsByClassName('portafolio-titulo')[0]
+var portfolioSubtitulo = document.getElementsByClassName('portafolio-subtitulo')[0]
+var portfolioBtn = document.getElementsByClassName('portafolio-btn')[0]
+
 // Efecto cambio de boton
 
 var idiomaBtn = document.getElementsByClassName('languaje-btn')[0]
@@ -221,6 +227,11 @@ idiomaBtn.addEventListener('click', function(){
         serviciosBoxParrFive.textContent = 'With my experience in creating WordPress projects, I can fix internal or external errors on your website. From issues within your hosting to internal frontend issues, I can confidently and effectively identify and fix issues.'
         serviciosBoxTitleSix.textContent = 'CREATION OF WEBSITES'
         serviciosBoxParrFix.textContent = 'Although I have little practice in pure code, I have developed pages highly praised by my tutors, which has given me the confidence to fulfill any role both on the frontend and backend.'
+        // ------- Portafolio --------- //
+        portfolioEtiqueta.textContent = 'PROJECTS | PORTFOLIO'
+        portfolioTitulo.innerHTML = 'PORT <br> FOLIO'
+        portfolioSubtitulo.textContent = '"Join me on a creative journey of discovery and take a look at my projects and works, I assure you that you will not be disappointed!"'
+        portfolioBtn.innerHTML = 'MORE INFO <i class="fa-solid fa-file change-color"></i>'
 
 
     }else if(!cambio){
@@ -328,5 +339,15 @@ idiomaBtn.addEventListener('click', function(){
         serviciosBoxParrFive.textContent = 'Con mi experiencia en la creación de proyectos de WordPress, puedo corregir errores internos o externos en su sitio web. Desde problemas dentro de su alojamiento hasta problemas internos de interfaz, puedo identificar y solucionar problemas con confianza y eficacia.'
         serviciosBoxTitleSix.textContent = 'CREACIÓN DE SITIOS WEB'
         serviciosBoxParrFix.textContent = 'Aunque tengo poca práctica en código puro, he desarrollado páginas muy elogiadas por mis tutores, lo que me ha dado la confianza para cumplir cualquier rol tanto en el frontend como en el backend.'  
+    
+        // ------- Portafolio --------- //
+        portfolioEtiqueta.textContent = 'PROYECTOS | PORTAFOLIO'
+        portfolioTitulo.innerHTML = 'PORTA <br> FOLIO'
+        portfolioSubtitulo.textContent = 'ÚNETE A MÍ EN UN VIAJE DE DESCUBRIMIENTO CREATIVO Y ECHA UN VISTAZO A MIS PROYECTOSY TRABAJOS, ¡TE ASEGURO QUE NO TE DECEPCIONARÁN!'
+        portfolioBtn.innerHTML = 'MAS INFORMACIÓN <i class="fa-solid fa-file change-color"></i>'
+    
+
+
+
     }
 })
