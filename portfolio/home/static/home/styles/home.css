@@ -159,27 +159,6 @@ body{
     cursor: pointer;
 }
 
-.info-tell{
-    display: none;
-    font-family: 'Bahiana';
-    font-size: 28px;
-    color: white;
-    margin-top: 20px;
-    animation: fadeInOut 2s ease-in-out infinite;
-}
-
-@keyframes fadeInOut {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-
 /* Parte Inferior */
 
 .inicio__numeros{
@@ -446,9 +425,6 @@ body{
 }
 
 @media screen and (max-width: 500px){
-    .info-tell{
-        display: block;
-    }
     .complementos{
         right: 15px;
     }
